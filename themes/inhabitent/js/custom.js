@@ -1,15 +1,14 @@
-console.log('hello');
-(function ($) {
+// (function ($) {
 
 
-        $(document).ready(function () {
+//         $(document).ready(function () {
 
-            $('body').append('hello');
-        })
-    }
+//             $('body').append('hello');
+//         })
+//     }
 
 
-)(jQuery);
+// )(jQuery);
 
 //IIFE
 //imeditley invoked function expression
