@@ -8,6 +8,7 @@
 	/* Make sure select elements fit in widgets. */
 	select {
 		max-width: 100%;
+
 	}
 }
 
@@ -24,10 +25,10 @@
 
 .widget-area {
 	position: absolute;
-	border: 1px solid #e1e1e1;
+	border-top: 1px solid #e1e1e1;
 	right: 10px;
 	top: 100px;
-
+	padding-left: 14px;
 }
 
 .textwidget a {

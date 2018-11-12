@@ -36,4 +36,8 @@ function inhabitent_login_logo_url() {
 	}
 	add_filter( 'login_headerurl', 'inhabitent_login_logo_url' );
 	
-	
+	function cc_mime_types($mimes) {
+		$mimes['svg'] = 'image/svg+xml';
+		return $mimes;
+	  }
+	  add_filter('upload_mimes', 'cc_mime_types');	

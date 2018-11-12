@@ -36,7 +36,7 @@ function inhabitent_setup() {
 	) );
 
 }
-endif; // red_starter_setup
+endif; // inhabitent_setup
 add_action( 'after_setup_theme', 'inhabitent_setup' );
 
 /**
@@ -112,11 +112,6 @@ require get_template_directory() . '/inc/template-tags.php';
  * Custom functions that act independently of the theme templates.
  */
 require get_template_directory() . '/inc/extras.php';
-
-
-
-
-
 
 // Remove "Editor" links from sub-menus
 function inhabitent_remove_submenus() {
