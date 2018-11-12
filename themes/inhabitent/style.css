@@ -683,3 +683,33 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+#post-2,
+#page {
+  border: solid red;
+  width: 69%; }
+
+.entry-header {
+  position: relative;
+  left: 90px; }
+  .entry-header img {
+    border: solid red; }
+
+.entry-title {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  background-color: #248A83;
+  text-transform: uppercase;
+  color: white;
+  padding: 10px;
+  max-width: 75%; }
+  .entry-title a {
+    color: white;
+    text-decoration: none; }
+
+.entry-content {
+  display: block;
+  border: solid red;
+  left: 90px;
+  position: relative;
+  max-width: 80%; }
