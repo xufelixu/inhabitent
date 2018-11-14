@@ -9,6 +9,32 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
+<section class="frontpage-shop">
+	<h2>Shop Stuff</h2>
+<?php
+get_terms();
+$terms = get_terms(array(
+	'taxonomy'=> 'product_type',
+	'hide_empty'=> 0,
+));
+
+foreach($terms as $term): ?>
+
+
+<div class="frontpage-term">
+<img src="<?php echo get_template_directory_uri() . '/images/'. $term->slug . '.svg' ?>" alt="<?php echo $term->name;?>"  />
+<p><?php echo $term->description;?></P>
+ <p><a href="<?php echo get_term_link ($term);?>">
+ <?php echo $term->name;?>Stuff</a></p>
+</div>
+<?php endforeach;?>
+</section>
+
+
+
+
+
+
 
 		<?php if ( have_posts() ) : ?>
 
@@ -35,7 +61,7 @@ get_header(); ?>
 
 		?>
             <?php
-   $args = array( 'post_type' => 'post','order','posts_per_page'=> 3 );
+   $args = array( 'post_type' => 'post','order'=>'ASC','posts_per_page'=> 3 );//limit to 3
    $joural_posts = get_posts( $args ); // returns an array of posts
 			?> 
 		<section class="front-page_journal">	
@@ -62,9 +88,16 @@ Read More
 </a>			 </article> 
 <?php endforeach; wp_reset_postdata(); ?>
 
-</section>
+</section><!-- #front journal entries info-->
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
 <?php get_footer(); ?>
+
+
+<!-- frontpage hero banner, add the background image with css e.g. background:url(../../images/home-hero.jpg)-->
+<!-- <section class="home-hero">
+	<img src="<?php echo get_template_directory_uri() . '/images/inhabitent-gogo-full.svg' ?>"
+class="logo" alt="inhabitent full logo"/>
+   </section> -->
