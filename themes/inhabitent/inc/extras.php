@@ -62,6 +62,7 @@ function inhabitent_login_logo_url() {
 			  display: flex;
 			  justify-content: center;
 			  align-items: center; 
+			  background-position: bottom;
 			}";
 		  } else {
 			$hero_css = ".page-template-about .entry-header {
@@ -75,6 +76,7 @@ function inhabitent_login_logo_url() {
 			  justify-content: center;
 			  align-items: center; 
 			  background-size: cover;
+			  background-position: bottom;
 			}";	  
 	}
 	
