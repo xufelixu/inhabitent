@@ -44,6 +44,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## Front page
 --------------------------------------------------------------*/
 html {
+  width: 100%;
+  height: 100%;
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%; }
@@ -221,6 +223,12 @@ table {
 td,
 th {
   padding: 0; }
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
 
 /*--------------------------------------------------------------
 # Embedded Fonts
@@ -574,13 +582,13 @@ a {
 .widget-area {
   position: absolute;
   border-top: 1px solid #e1e1e1;
-  right: 10px;
+  right: 0px;
   top: 100px;
-  padding-left: 14px; }
-
-.textwidget a {
-  color: #248A83;
-  text-decoration: none; }
+  padding-top: 40px;
+  border: solid green; }
+  .widget-area a {
+    text-decoration: none;
+    color: #248A83; }
 
 /*--------------------------------------------------------------
 # Content
@@ -684,49 +692,30 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
-.footer-page {
-  width: 100%;
-  margin: 10px; }
-
-#post-2,
-#page {
-  border-right: solid #e1e1e1;
-  width: 68%; }
-
-.entry-header {
-  position: relative;
-  left: 90px; }
-  .entry-header img {
-    border: solid red; }
-
-.entry-title {
-  position: absolute;
-  top: 10px;
-  left: 0;
-  background-color: #248A83;
-  text-transform: uppercase;
-  color: #ffffff;
-  padding: 10px;
-  max-width: 75%; }
-  .entry-title a {
-    color: #ffffff;
-    text-decoration: none; }
-
 .entry-content {
-  display: block;
+  margin-left: 50px;
+  width: 60%;
+  border-right: 1px solid #e1e1e1;
   border: solid red;
-  left: 90px;
-  position: relative;
-  max-width: 80%; }
+  height: 100%;
+  position: relative; }
+  .entry-content .wp-block-image {
+    border: solid green; }
+  .entry-content a {
+    text-decoration: none;
+    color: white; }
+  .entry-content #VCPC {
+    background-color: #248A83;
+    max-width: 70%;
+    position: absolute;
+    top: 60px;
+    padding: 10px; }
 
 .site-footer {
   background-color: #404040;
   color: #ffffff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 1150px;
-  padding-bottom: 100px; }
+  padding-bottom: 100px;
+  border: solid red; }
   .site-footer h3 {
     text-transform: uppercase;
     color: #d99054; }
@@ -741,7 +730,6 @@ object {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  width: 1150px;
   margin-top: 20px; }
 
 .contact-info {
@@ -757,5 +745,4 @@ object {
 .foot-container {
   background-color: #404040;
   text-align: center;
-  color: #ffffff;
-  width: 1150px; }
+  color: #ffffff; }

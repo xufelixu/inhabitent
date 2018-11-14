@@ -1,0 +1,46 @@
+.site-footer {
+    background-color: #404040;
+    color: #ffffff;
+    padding-bottom: 100px;
+    border: solid red;
+
+    h3 {
+        text-transform: uppercase;
+        color: #d99054;
+    }
+
+    a {
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+}
+
+.site-info {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.contact-info {
+    display: block;
+    margin: 0px;
+
+    p {
+        height: 20px;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .fab {
+        padding: 10px;
+    }
+}
+
+
+.foot-container {
+    background-color: #404040;
+    text-align: center;
+    color: #ffffff;
+
+}
