@@ -9,6 +9,15 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
+
+<!-- frontpage hero banner, add the background image with css e.g. background:url(../../images/home-hero.jpg)-->
+<section class="home-hero">
+	<img src="<?php echo get_template_directory_uri() . '/images/inhabitent-logo-full.svg'?>"
+class="logo" alt="inhabitent full logo"/>
+   </section>
+
+
+<!-- shop logo -->
 <section class="frontpage-shop">
 	<h2>Shop Stuff</h2>
 <?php
@@ -29,10 +38,6 @@ foreach($terms as $term): ?>
 </div>
 <?php endforeach;?>
 </section>
-
-
-
-
 
 
 
@@ -96,8 +101,3 @@ Read More
 <?php get_footer(); ?>
 
 
-<!-- frontpage hero banner, add the background image with css e.g. background:url(../../images/home-hero.jpg)-->
-<!-- <section class="home-hero">
-	<img src="<?php echo get_template_directory_uri() . '/images/inhabitent-gogo-full.svg' ?>"
-class="logo" alt="inhabitent full logo"/>
-   </section> -->

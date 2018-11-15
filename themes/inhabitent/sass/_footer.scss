@@ -1,5 +1,5 @@
 .site-footer {
-    background-color: #404040;
+    background-image: url("../../images/dark-wood@2x.png");
     color: #ffffff;
     padding-bottom: 100px;
     border: solid red;
@@ -39,8 +39,18 @@
 
 
 .foot-container {
-    background-color: #404040;
+    background-image: url("../../images/dark-wood.png");
     text-align: center;
     color: #ffffff;
+
+}
+
+.footer-logo {
+    width: 20%;
+
+    img {
+        margin-top: 20px;
+    }
+
 
 }

@@ -42,7 +42,7 @@
 							</div>  <!--business-hours-->
 				           <div class="footer-logo">
                       			<a href="www.google.com" rel="home-page">
-					      			<img src="inhabitent-logo-text-dark/" alt="foot-logo">
+					      			<img src=" <?php echo get_template_directory_uri() . '/images/inhabitent-logo-text.svg' ?>" alt="foot-logo"/>
 					  			</a>
 				           </div> <!--footer-logo -->
 		   </div><!-- .site-info -->
