@@ -403,6 +403,9 @@ textarea {
   padding-left: 3px;
   width: 100%; }
 
+.wpcf7-form span {
+  color: orange; }
+
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
@@ -761,8 +764,21 @@ object {
     padding-right: 71.5px;
     padding-top: 10px; }
 
-.wpcf7-form span {
-  color: orange; }
+.page-template .entry-title {
+  text-transform: uppercase; }
+
+.page-template .entry-content h2 {
+  padding: 10px 0;
+  line-height: 1.25;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: Novecento Sans Web, sans-serif; }
+
+.page-template .entry-content p {
+  max-width: 800px;
+  margin: 10px 200px;
+  font-family: Merriweather Web, serif; }
 
 .site-footer {
   background-image: url("../../images/dark-wood@2x.png");

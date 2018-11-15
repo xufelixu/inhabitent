@@ -122,12 +122,39 @@
 
 }
 
-//form
+//about page
 
-.wpcf7-form {
+.page-template {
 
-    span {
-        color: orange;
+    .entry-title {
+        text-transform: uppercase;
     }
+
+    .entry-content {
+
+
+
+        h2 {
+            padding: 10px 0;
+            line-height: 1.25;
+            text-align: center;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-family: Novecento Sans Web, sans-serif;
+        }
+
+        p {
+            max-width: 800px;
+            margin: 10px 200px;
+            font-family: Merriweather Web, serif;
+
+
+        }
+
+
+
+    }
+
+
 
 }
