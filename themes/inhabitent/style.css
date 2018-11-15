@@ -505,6 +505,27 @@ a {
   text-align: right;
   width: 50%; }
 
+.logo-tent {
+  height: 40px;
+  width: 40px;
+  margin-left: 100px; }
+
+.header-green-logo-tent {
+  position: relative;
+  border-bottom: 1px solid #e1e1e1e1;
+  margin-bottom: 0px; }
+
+.main-navigation {
+  max-width: 50%;
+  text-transform: uppercase;
+  position: absolute;
+  top: 30px;
+  right: 0px; }
+  .main-navigation li {
+    padding: 10px; }
+  .main-navigation a {
+    color: #248a83; }
+
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
@@ -710,6 +731,37 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.blog .site-main {
+  width: 66%;
+  border-right: solid #e1e1e1 1px; }
+
+.blog .entry-content {
+  padding-left: 80px;
+  padding-right: 25px; }
+
+.blog .entry-header {
+  position: relative; }
+  .blog .entry-header img {
+    padding-top: 40px;
+    margin-left: 80px;
+    margin-bottom: 5px; }
+  .blog .entry-header .entry-title {
+    position: absolute;
+    top: 70px;
+    left: 80px;
+    background-color: #248483;
+    padding: 10px; }
+    .blog .entry-header .entry-title a {
+      color: white;
+      text-decoration: none; }
+  .blog .entry-header .entry-meta {
+    position: absolute;
+    bottom: 12px;
+    background-color: #248483;
+    left: 400px;
+    padding: 2px 8px;
+    color: white; }
+
 .site-footer {
   background-image: url("../../images/dark-wood@2x.png");
   color: #ffffff;

@@ -3,3 +3,80 @@
 --------------------------------------------------------------*/
 
 /* Front page */
+
+//journal page
+
+.blog {
+    .site-main {
+        width: 66%;
+        border-right: solid #e1e1e1 1px;
+    }
+
+
+    //jounal content
+
+
+    .entry-content {
+        padding-left: 80px;
+        padding-right: 25px;
+    }
+
+    //journal content 
+
+
+
+    .entry-header {
+        position: relative;
+
+
+        img {
+            padding-top: 40px;
+            margin-left: 80px;
+            margin-bottom: 5px;
+        }
+
+        //journal image
+
+        .entry-title {
+            position: absolute;
+            top: 70px;
+            left: 80px;
+            background-color: #248483;
+            padding: 10px;
+
+
+            a {
+                color: white;
+                text-decoration: none;
+            }
+
+            //title link
+
+
+
+        }
+
+        //journal title
+
+
+
+        .entry-meta {
+            position: absolute;
+            bottom: 12px;
+            background-color: #248483;
+            left: 400px;
+            padding: 2px 8px;
+            color: white;
+        }
+
+        //journal meta
+
+    }
+
+    //heder container 
+
+
+
+}
+
+//journal page

@@ -134,3 +134,38 @@ a {
 		width: 50%;
 	}
 }
+
+// header menue
+
+.logo-tent {
+	height: 40px;
+	width: 40px;
+
+	margin-left: 100px;
+
+}
+
+.header-green-logo-tent {
+	position: relative;
+	border-bottom: 1px solid #e1e1e1e1;
+	margin-bottom: 0px;
+}
+
+.main-navigation {
+
+	max-width: 50%;
+	text-transform: uppercase;
+	position: absolute;
+	top: 30px;
+	right: 0px;
+
+	li {
+		padding: 10px;
+	}
+
+	a {
+
+		color: #248a83;
+	}
+
+}
