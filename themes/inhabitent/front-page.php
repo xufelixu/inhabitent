@@ -35,7 +35,7 @@ foreach($terms as $term): ?>
 <img src="<?php echo get_template_directory_uri() . '/images/'. $term->slug . '.svg' ?>" alt="<?php echo $term->name;?>"  />
 <p><?php echo $term->description;?></P>
  <p><a href="<?php echo get_term_link ($term);?>">
- <?php echo $term->name;?>Stuff</a></p>
+ <?php echo $term->name;?> Stuff</a></p>
 </div>
 <?php endforeach;?>
 </section>
@@ -86,8 +86,8 @@ foreach($terms as $term): ?>
 		 comments_number('0 Comments', '1 Comments', '% Comments');?>
 		 </span>
 
-		 <a href="<?php echo get_the_permalink(); ?>">
-		 <?php the_title();?></a>
+		<p class="entry-meta-title" ><a href="<?php echo get_the_permalink(); ?>">
+		 <?php the_title();?></a></p>
 		 <a class="read-more",href="<?php echo get_the_permalink(); ?>">
 Read More 
 
