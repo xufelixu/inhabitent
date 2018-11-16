@@ -18,8 +18,9 @@ class="logo" alt="inhabitent full logo"/>
 
 
 <!-- shop logo -->
+<h2>Shop Stuff</h2>
 <section class="frontpage-shop">
-	<h2>Shop Stuff</h2>
+	
 <?php
 get_terms();
 $terms = get_terms(array(

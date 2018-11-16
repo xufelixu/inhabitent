@@ -23,9 +23,12 @@ get_header(); ?>
 			<?php inhabitent_posted_on(); ?> / <?php inhabitent_comment_count(); ?> / <?php inhabitent_posted_by(); ?>
 		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->
-    
-    <?php echo CFS()->get( 'price' ); ?><!-- product_price-->
 	
+	<div class="price">
+	<?php 
+	setlocale(LC_MONETARY, 'en_US');
+	echo money_format('%.2n',CFS()->get('price' )); ?><!-- product_price-->
+     </div>
     <div class="entry-content">
 		<?php the_content(); ?>
 		<?php

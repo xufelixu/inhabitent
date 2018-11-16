@@ -7,9 +7,33 @@
 //journal page
 
 .blog {
+
     .site-main {
         width: 66%;
+
         border-right: solid #e1e1e1 1px;
+
+        .read-more {
+            border: 1px solid black;
+            color: black;
+            padding: 10px;
+            text-transform: uppercase;
+            text-decoration: none;
+            position: relative;
+            left: 80px;
+            bottom: 10px;
+            font-family: Novecento Sans Web, sans-serif;
+
+        }
+
+        a:hover {
+            background-color: #248483;
+            color: white;
+
+
+        }
+
+
     }
 
 
@@ -76,6 +100,25 @@
     //heder container 
 
 
+    // .read-more {
+    //     border: 1px solid black;
+    //     color: black;
+    //     padding: 10px;
+    //     text-transform: uppercase;
+    //     text-decoration: none;
+    //     position: absolute;
+    //     left: 80px;
+    //     margin-bottom: 20px;
+    //     font-family: Novecento Sans Web, sans-serif;
+
+    // }
+
+    // a:hover {
+    //     background-color: #248483;
+    //     color: white;
+
+
+    // }
 
 }
 
@@ -159,7 +202,7 @@
 
 }
 
-//shop page
+//shop page signle product
 
 .product-template-default {
 
@@ -184,6 +227,25 @@
 
     }
 
+    .content-area {
+
+
+
+        .price {
+
+            position: relative;
+            top: -320px;
+            left: 650px;
+
+        }
+
+
+
+    }
+
+
+
+
     .entry-content {
 
         p {
@@ -192,6 +254,7 @@
             width: 40%;
             top: 170px;
             left: 650px;
+            margin-top: 30px;
 
         }
 
@@ -219,6 +282,123 @@
 
 
     }
+
+
+
+
+}
+
+//home page 
+
+.home {
+
+    .content-area {
+
+        width: 100%;
+    }
+
+    .home-hero img {
+
+        width: 250px;
+        height: 250px;
+
+    }
+
+    h2 {
+        font-weight: 400;
+        text-align: center;
+        line-height: 1.25;
+        clear: both;
+        font-family: Novecento Sans Web, sans-serif;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        margin: 50px;
+    }
+
+    .frontpage-shop {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        padding: 0 120px;
+
+        img {
+            height: 80px;
+            width: 80px;
+            padding: 15px;
+
+
+        }
+
+        .frontpage-term {
+            border: 1px solid #e1e1e1;
+            border-top-width: 5px;
+            width: 25%;
+            margin-left: 15px;
+
+            &:hover {
+
+                border-color: orange;
+
+            }
+
+            a {
+                text-decoration: none;
+                background-color: #248483;
+                padding: 10px;
+                color: white;
+                text-transform: uppercase;
+                letter-spacing: 3px;
+            }
+
+        }
+
+
+    }
+
+    .front-page_journal {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+
+
+        .entry-meta {
+            font-size: 10px;
+        }
+
+        .journal-entry {
+            width: 25%;
+            border: 1px solid #e1e1e1;
+            margin-left: 15px;
+            height: 350px;
+            position: relative;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: #248483;
+            display: flex;
+            text-transform: uppercase;
+            justify-content: flex-start;
+            padding-top: 20px;
+        }
+
+        .read-more {
+            border: 1px solid;
+            position: absolute;
+            left: 20px;
+            top: 290px;
+            padding: 10px;
+            color: black;
+        }
+
+        a:hover {
+            background-color: #248483;
+            color: white;
+        }
+
+    }
+
 
 
 

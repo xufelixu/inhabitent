@@ -717,6 +717,19 @@ object {
 .blog .site-main {
   width: 66%;
   border-right: solid #e1e1e1 1px; }
+  .blog .site-main .read-more {
+    border: 1px solid black;
+    color: black;
+    padding: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    position: relative;
+    left: 80px;
+    bottom: 10px;
+    font-family: Novecento Sans Web, sans-serif; }
+  .blog .site-main a:hover {
+    background-color: #248483;
+    color: white; }
 
 .blog .entry-content {
   padding-left: 80px;
@@ -793,12 +806,18 @@ object {
     top: 10px;
     left: 650px; }
 
+.product-template-default .content-area .price {
+  position: relative;
+  top: -320px;
+  left: 650px; }
+
 .product-template-default .entry-content p {
   position: absolute;
   font-family: Merriweather Web, serif;
   width: 40%;
   top: 170px;
-  left: 650px; }
+  left: 650px;
+  margin-top: 30px; }
 
 .product-template-default .entry-content .social-buttons {
   display: -webkit-box;
@@ -819,11 +838,94 @@ object {
     .product-template-default .entry-content .social-buttons .black-btn .fab {
       padding: 5px 10px; }
 
+.home .content-area {
+  width: 100%; }
+
+.home .home-hero img {
+  width: 250px;
+  height: 250px; }
+
+.home h2 {
+  font-weight: 400;
+  text-align: center;
+  line-height: 1.25;
+  clear: both;
+  font-family: Novecento Sans Web, sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 50px; }
+
+.home .frontpage-shop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  padding: 0 120px; }
+  .home .frontpage-shop img {
+    height: 80px;
+    width: 80px;
+    padding: 15px; }
+  .home .frontpage-shop .frontpage-term {
+    border: 1px solid #e1e1e1;
+    border-top-width: 5px;
+    width: 25%;
+    margin-left: 15px; }
+    .home .frontpage-shop .frontpage-term:hover {
+      border-color: orange; }
+    .home .frontpage-shop .frontpage-term a {
+      text-decoration: none;
+      background-color: #248483;
+      padding: 10px;
+      color: white;
+      text-transform: uppercase;
+      letter-spacing: 3px; }
+
+.home .front-page_journal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center; }
+  .home .front-page_journal .entry-meta {
+    font-size: 10px; }
+  .home .front-page_journal .journal-entry {
+    width: 25%;
+    border: 1px solid #e1e1e1;
+    margin-left: 15px;
+    height: 350px;
+    position: relative; }
+  .home .front-page_journal a {
+    text-decoration: none;
+    color: #248483;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-transform: uppercase;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding-top: 20px; }
+  .home .front-page_journal .read-more {
+    border: 1px solid;
+    position: absolute;
+    left: 20px;
+    top: 290px;
+    padding: 10px;
+    color: black; }
+  .home .front-page_journal a:hover {
+    background-color: #248483;
+    color: white; }
+
 .site-footer {
   background-image: url("../../images/dark-wood@2x.png");
   color: #ffffff;
   padding-bottom: 100px;
-  border: solid red; }
+  margin-top: 80px; }
   .site-footer h3 {
     text-transform: uppercase;
     color: #d99054; }
