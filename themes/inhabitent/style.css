@@ -960,6 +960,47 @@ object {
       .archive .archive-frontpage-shop p a:hover {
         color: plum; }
 
+.archive .product-link-title {
+  width: 250px;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: Merriweather Web, serif;
+  letter-spacing: 0;
+  padding-right: .25rem;
+  text-transform: none;
+  text-align: left;
+  padding-left: 5px;
+  text-transform: uppercase;
+  border: solid green; }
+
+.archive .price {
+  position: absolute;
+  left: 100px;
+  top: 25px; }
+
+.archive .product-link {
+  border: 1px solid #e1e1e1;
+  position: relative; }
+
+.archive .product-link img {
+  width: 250px;
+  height: 250px; }
+
+.archive .archive-php-page {
+  margin-left: 100px;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 250px 250px 250px 250px;
+  grid-template-rows: 300px 300px 300px 300px; }
+
+.archive .dots {
+  overflow: hidden;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1; }
+  .archive .dots:after {
+    content: '.....................................'; }
+
 .site-footer {
   background-image: url("../../images/dark-wood@2x.png");
   color: #ffffff;
