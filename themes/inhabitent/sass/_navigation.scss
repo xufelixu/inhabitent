@@ -169,3 +169,20 @@ a {
 	}
 
 }
+
+//search bar
+
+.search-form {
+	position: absolute;
+	top: 20px;
+	right: 10px;
+	border: none;
+
+
+	.search-submit {
+		position: absolute;
+		border: none;
+		top: 0px;
+		right: 160px;
+	}
+}

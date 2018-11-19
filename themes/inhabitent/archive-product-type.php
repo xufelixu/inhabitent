@@ -1,8 +1,8 @@
 <?php
 /**
- * The template for displaying archive pages.
+ * The template for displaying products.
  *
- * @package RED_Starter_Theme
+ * @package inhabitent_Theme
  */
 
 get_header(); ?>
@@ -18,28 +18,6 @@ get_header(); ?>
 				?>
 			</header><!-- .page-header -->
 
-<!-- loop the list  -->
-<section class="archive-frontpage-shop">
-      <?php
-    get_terms();
-     $terms = get_terms(array(
-      'taxonomy'=> 'product_type',
-     'hide_empty'=> 0,
-    ));
-
-     foreach($terms as $term): ?>
-     <div class="-archive-frontpage-term">
-     <p><a href="<?php echo get_term_link ($term);?>">
-     <?php echo $term->name;?></a></p>
-     </div>
-     <?php endforeach;?>
-
-     </section>
-
-
-
-
-
 <div class="archive-php-page">
 
     <?php /* Start the Loop  acrhive pic */ ?>
@@ -49,8 +27,6 @@ get_header(); ?>
 		<?php the_post_thumbnail( 'large' ); ?></a>
 	
 		
-
-     
 		 <h3 class="product-link-title"><?php the_title(); ?></h3>
 		 <div class="dots"></div>
 	     <span class="price"><?php 
@@ -69,9 +45,7 @@ get_header(); ?>
 
 		    <?php endif; ?>
 
-       
-     
-          
+         
 
 </div>
 

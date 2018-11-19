@@ -16,10 +16,6 @@
 	<?php wp_head(); ?>
 	</head>
 
-
-
-
-
 	<body <?php body_class(); ?>>
 		<div id="page" class="hfeed site">
 			<a class="skip-link screen-reader-text" href="#content"><?php echo esc_html( 'Skip to content' ); ?></a>
@@ -31,14 +27,14 @@
 					<!-- <p class="site-description"><?php bloginfo( 'description' ); ?></p> -->
 				
 				<section class="header-green-logo-tent">
-	            <img src="<?php echo get_template_directory_uri() . '/images/inhabitent-logo-tent.svg' ?>"
-                class="logo-tent" alt="inhabitent logo tent"/>
+	 <a href = "http://localhost:8888/inhabitent/" rel ="home page"><img src="<?php echo get_template_directory_uri() . '/images/inhabitent-logo-tent.svg' ?>"
+                class="logo-tent" alt="inhabitent logo tent"/></a>
                 </section>
 				
 				</div><!-- .site-branding with green logo tent -->
 
 
-
+              <div class = "search-form"> <?php get_search_form(); ?> </div>
 
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">

@@ -7,7 +7,7 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
+	<div id="primary" class="journal-content-area">
 		<main id="main" class="site-main" role="main">
 
 		<?php while ( have_posts() ) : the_post(); ?>
@@ -15,7 +15,13 @@ get_header(); ?>
 			<?php get_template_part( 'template-parts/content', 'single' ); ?>
 
 			<?php the_post_navigation(); ?>
+		 
+			<div class="social-buttons"><button class="black-btn" type="button"> <i class="fab fa-facebook-f"></i>Like</button>
+           <button class="black-btn" type="button"><i class="fab fa-twitter"></i>Tweet</button>
+		  <button class="black-btn" type="button"><i class="fab fa-pinterest"></i>Pin</button>
+		  </div>
 
+		  
 			<?php
 				// If comments are open or we have at least one comment, load up the comment template.
 				if ( comments_open() || get_comments_number() ) :
