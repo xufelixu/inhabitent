@@ -15,10 +15,4 @@
 	
 </form>
 
- <!-- <div id="custom-search">
-	<input type="text" name="search" class="search-query" placeholder="Search" />
-	<button type="button">
-		<i class="fa fa-search fa-2x" aria-hidden="true"></i>
-	</button>
-	<input type="submit" value="Submit" style="display: none;">
-</div> -->
+ 

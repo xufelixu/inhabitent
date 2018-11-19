@@ -536,3 +536,33 @@
         }
     }
 }
+
+
+
+.tax-product_type {
+
+    .description {
+        font-family: Merriweather Web, serif;
+        text-align: center;
+        padding: 20px;
+        font-weight: 400;
+        width: 88%;
+        border-bottom: dotted #e1e1e1;
+        position: relative;
+        left: 110px;
+
+    }
+
+    .archive-php-page {
+        display: grid;
+        grid-template-columns: 250px 250px 250px 250px;
+        grid-template-rows: 300px;
+        margin-bottom: 30px;
+        padding-top: 50px;
+    }
+
+
+
+
+
+}

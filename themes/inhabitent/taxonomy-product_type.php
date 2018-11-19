@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying products.
+ * The template for displaying products type.
  *
  * @package inhabitent_Theme
  */
@@ -16,17 +16,21 @@ get_header(); ?>
 				<?php
 					the_archive_title( '<h1 class="page-title">', '</h1>' );	
 				?>
+				<h3 class="description"><?php echo term_description( ) ?></h3>
 			</header><!-- .page-header -->
 
 <div class="archive-php-page">
 
     <?php /* Start the Loop  acrhive pic */ ?>
-	     <?php while ( have_posts() ) : the_post(); ?>
+		 <?php while ( have_posts() ) : the_post(); ?>
+		 
+	
 
-	<div class="product-link"> <a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>">
+	<div class="product-link"> <a href="<?php the_permalink() ?>"
+	 rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>">
 		<?php the_post_thumbnail( 'large' ); ?></a>
 	
-		
+
 		 <h3 class="product-link-title"><?php the_title(); ?></h3>
 		 <div class="dots"></div>
 	     <span class="price"><?php 
