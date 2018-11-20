@@ -178,11 +178,22 @@ a {
 	right: 10px;
 	border: none;
 
-
 	.search-submit {
 		position: absolute;
 		border: none;
 		top: 0px;
-		right: 160px;
+		right: 180px;
+		background: transparent;
+		color: #248a83;
+
+
+	}
+
+	.search_field {
+
+		transition: 1s;
+		border: none;
+
+
 	}
 }

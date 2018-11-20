@@ -4,7 +4,8 @@
  * Handles toggling the navigation menu for small screens and enables TAB key
  * navigation support for dropdown menus.
  */
-;(function () {
+;
+(function () {
   let container, button, menu, links, i, len
 
   container = document.getElementById('site-navigation')
@@ -19,7 +20,7 @@
 
   menu = container.getElementsByTagName('ul')[0]
 
-    // Hide menu toggle button if menu is empty and return early.
+  // Hide menu toggle button if menu is empty and return early.
   if (typeof menu === 'undefined') {
     button.style.display = 'none'
     return
@@ -42,24 +43,24 @@
     }
   }
 
-    // Get all the link elements within the menu.
+  // Get all the link elements within the menu.
   links = menu.getElementsByTagName('a')
 
-    // Each time a menu link is focused or blurred, toggle focus.
+  // Each time a menu link is focused or blurred, toggle focus.
   for ((i = 0), (len = links.length); i < len; i++) {
     links[i].addEventListener('focus', toggleFocus, true)
     links[i].addEventListener('blur', toggleFocus, true)
   }
 
-    /**
+  /**
    * Sets or removes .focus class on an element.
    */
-  function toggleFocus () {
+  function toggleFocus() {
     let self = this
 
-        // Move up through the ancestors of the current link until we hit .nav-menu.
+    // Move up through the ancestors of the current link until we hit .nav-menu.
     while (self.className.indexOf('nav-menu') === -1) {
-            // On li elements toggle the class .focus.
+      // On li elements toggle the class .focus.
       if (self.tagName.toLowerCase() === 'li') {
         if (self.className.indexOf('focus') !== -1) {
           self.className = self.className.replace(' focus', '')
@@ -72,17 +73,19 @@
     }
   }
 
-    /**
+  /**
    * Toggles `focus` class to allow submenu access on tablets.
    */
-  ;(function (container) {
+  ;
+  (function (container) {
     let touchStartFn,
       i,
       parentLink = container.querySelectorAll('.menu-item-has-children > a, .page_item_has_children > a')
 
     if ('ontouchstart' in window) {
       touchStartFn = function (e) {
-        let menuItem = this.parentNode, i
+        let menuItem = this.parentNode,
+          i
 
         if (!menuItem.classList.contains('focus')) {
           e.preventDefault()
@@ -103,16 +106,27 @@
       }
     }
   })(container)
-})()
 
-// search bar
-;(function ($) {
-  $('.show-search').on('click', function (event) {
-    event.preventDefault()
-    $('#site-navigation input[type=search]').animate({ width: 'toggle' }).focus()
-  })
 
-  $('#site-navigation input[type=search]').on('focusout', function () {
-    $(this).animate({ width: 'toggle' })
-  })
 })
+();
+
+// search bar 
+
+
+(function ($) {
+  $('.search-form').on("click", function (event) {
+    event.preventDefault();
+
+    $(".search-field").addClass("show");
+    $(".search-field").focus();
+
+  });
+
+
+  $(".search-field").on("blur", function () {
+    $(".search-field").removeClass("show");
+  });
+
+});
+(jQuery);
