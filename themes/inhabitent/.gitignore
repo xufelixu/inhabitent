@@ -1,21 +1,5 @@
-# Ignore everything in "wp-content" except these directories. #
-/*
-!.gitignore
-!plugins/
-!themes/
-!uploads/
-!README.md
-# Ignore everything in "plugins" except certain plugins. #
-plugins/*
-!plugins/inhabitent-functionality/
-!plugins/inhabitent-business-hours/
-# Ignore everything in "themes" except the active theme. #
-themes/*
-!themes/inhabitent/
-# Ignore packages #
-themes/inhabitent/node_modules/
-
 # Ignore OS files #
+# =============== #
 .DS_Store
 .DS_Store?
 ._*
@@ -24,9 +8,18 @@ themes/inhabitent/node_modules/
 ehthumbs.db
 *[Tt]humbs.db
 *.Trashes
-# Ignore logs and databases #
-*.log
-*.sql
-*.sqlite
-error_log
-access_log
+
+# Ignore packages #
+# =============== #
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Ignore packages #
+# =============== #
+node_modules/
