@@ -29,7 +29,7 @@ get_header(); ?>
 
      foreach($terms as $term): ?>
      <div class="-archive-frontpage-term">
-     <p><a href="<?php echo get_term_link ($term);?>">
+     <p ><a href="<?php echo get_term_link ($term);?>">
      <?php echo $term->name;?></a></p>
      </div>
      <?php endforeach;?>

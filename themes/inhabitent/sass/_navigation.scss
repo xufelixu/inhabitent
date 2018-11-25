@@ -174,25 +174,26 @@ a {
 
 .search-form {
 	position: absolute;
-	top: 20px;
+	top: 0px;
 	right: 10px;
 	border: none;
+	margin: 5px;
+	padding: 0px;
 
 	.search-submit {
-		position: absolute;
+
 		border: none;
-		top: 0px;
-		right: 180px;
 		background: transparent;
-		color: #248a83;
+		top: 30px;
+
 
 
 	}
 
 	.search_field {
-
-		transition: 1s;
+		background: transparent;
 		border: none;
+		color: #248a83;
 
 
 	}

@@ -34,7 +34,7 @@ foreach($terms as $term): ?>
 <div class="frontpage-term">
 <img src="<?php echo get_template_directory_uri() . '/images/'. $term->slug . '.svg' ?>" alt="<?php echo $term->name;?>"  />
 <p><?php echo $term->description;?></P>
- <p><a href="<?php echo get_term_link ($term);?>">
+ <p class="front-page-link"><a href="<?php echo get_term_link ($term);?>">
  <?php echo $term->name;?> Stuff</a></p>
 </div>
 <?php endforeach;?>
@@ -95,6 +95,67 @@ Read More
 <?php endforeach; wp_reset_postdata(); ?>
 
 </section><!-- #front journal entries info-->
+
+<div class="adventures container">
+
+<h2>latest adventures</h2>
+
+</div>
+
+<section class="story-wrapper">  
+
+	<div class="adventure-canoe">
+
+		<p>Getting Back to Nature in a Canoe</p>     
+
+		<div>
+
+			<a class="read-entry" href="<?php the_permalink(); ?>"> Read More </a>
+
+		</div>
+
+	</div>
+
+	<div class="adventure-beach">
+
+		<p>A Night with Friends at the Beach</p>     
+
+		<div>
+
+			<a class="read-entry" href="<?php the_permalink(); ?>"> Read More </a>
+
+		</div>
+
+	</div>
+
+	<div class="adventure-sky">
+
+		<p>Star-Gazing at the Night Sky</p>     
+
+		<div>
+
+			<a class="read-entry" href="<?php the_permalink(); ?>"> Read More </a>
+
+		</div>
+
+	</div>
+
+	<div class="adventure-mountain">
+
+		<p>Taking in the View at Big Mountain</p>     
+
+		<div>
+
+			<a class="read-entry" href="<?php the_permalink(); ?>"> Read More </a>
+
+		</div>
+
+	</div>
+
+	<button>more adventures</button>
+
+</section><!-- adventures -->
+
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

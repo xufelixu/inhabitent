@@ -2,7 +2,7 @@
 # Embedded Fonts
 --------------------------------------------------------------*/
 @font-face {
-    font-family: 'Merriweather';
+    font-family: 'Merriweather-Bold';
     src: url('../../fonts/Merriweather-Bold.eot');
     src: url('../../fonts/Merriweather-Bold.ttf') format('embedded-opentype'),
         url('../../fonts/Merriweather-Bold.woff2') format('woff2'),
@@ -25,7 +25,7 @@
 }
 
 @font-face {
-    font-family: 'Merriweather-Light';
+    font-family: 'Merriweather';
     src: url('../../fonts/Merriweather-Light.eot');
     src: url('../../fonts/Merriweather-Light.eot?#iefix') format('embedded-opentype'),
         url('../../fonts/Merriweather-Light.woff2') format('woff2'),

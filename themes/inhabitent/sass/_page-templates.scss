@@ -236,6 +236,7 @@
 .page-template {
     .entry-title {
         text-transform: uppercase;
+        font-size: 68px;
     }
 
     .entry-content {
@@ -246,12 +247,18 @@
             letter-spacing: 2px;
             text-transform: uppercase;
             font-family: Novecento, sans-serif;
+            font-size: 40px;
+            padding-bottom: 30px;
+
         }
 
         p {
-            max-width: 800px;
-            margin: 10px 200px;
+            width: 60%;
+            font-size: 22px;
+            position: relative;
+            left: 250px;
             font-family: Merriweather, serif;
+            padding-bottom: 30px;
         }
     }
 }
@@ -367,10 +374,16 @@
         }
 
         .frontpage-term {
-            border: 1px solid $color_border;
+            border: 2px solid $color_border;
             border-top-width: 5px;
             width: 25%;
             margin-left: 15px;
+            height: 330px;
+
+            p {
+                padding: 5px;
+                font-size: 20px;
+            }
 
             &:hover {
                 border-color: orange;
@@ -384,60 +397,75 @@
                 text-transform: uppercase;
                 letter-spacing: 3px;
             }
+
+            .front-page-link {
+
+                position: relative;
+                top: 50px;
+
+            }
+        }
+    }
+}
+
+.front-page_journal {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    .entry-meta {
+        font-size: 10px;
+        position: relative;
+        left: -90px;
+
+    }
+
+    .journal-entry {
+        width: 25%;
+        border: 1px solid $color_border;
+        margin-left: 15px;
+        height: 500px;
+        position: relative;
+
+        img {
+            width: 120%;
+
         }
     }
 
-    .front-page_journal {
+    a {
+        font-size: 24px;
+        text-decoration: none;
+        color: $color_background;
         display: flex;
-        justify-content: center;
-        text-align: center;
+        text-transform: uppercase;
+        justify-content: flex-start;
+        padding-top: 5px;
+        margin-left: 10px;
+    }
 
-        .entry-meta {
-            font-size: 10px;
-            position: relative;
-            left: -55px;
-        }
+    .read-more {
+        border: 1px solid;
+        position: absolute;
+        left: 10px;
+        top: 400px;
+        padding: 10px;
+        color: $color__text-main;
+    }
 
-        .journal-entry {
-            width: 25%;
-            border: 1px solid $color_border;
-            margin-left: 15px;
-            height: 350px;
-            position: relative;
-        }
+    a:hover {
+        background-color: $color_background;
+        color: $color_white;
+    }
 
-        a {
-            text-decoration: none;
-            color: $color_background;
-            display: flex;
-            text-transform: uppercase;
-            justify-content: flex-start;
-            padding-top: 5px;
-        }
+    .entry-meta-title a {
+        text-align: left;
+        padding: 5px;
+        width: 90%;
 
-        .read-more {
-            border: 1px solid;
-            position: absolute;
-            left: 20px;
-            top: 290px;
-            padding: 10px;
-            color: $color__text-main;
-        }
-
-        a:hover {
-            background-color: $color_background;
-            color: $color_white;
-        }
-
-        .entry-meta-title a {
-            text-align: left;
-            padding: 5px;
-            width: 90%;
-
-            &:hover {
-                background-color: $color_white;
-                color: $color__link-visited;
-            }
+        &:hover {
+            background-color: $color_white;
+            color: $color__link-visited;
         }
     }
 }
@@ -497,7 +525,6 @@
         padding-left: 5px;
         text-transform: uppercase;
         overflow: hidden;
-
 
     }
 
@@ -567,5 +594,54 @@
 
 
 
+
+}
+
+
+//404 page
+
+.error-404 {
+    h1.page-title {
+        font-size: 48px;
+
+    }
+
+    .page-content {
+
+        font-size: 28px;
+
+    }
+
+    margin-top: 100px;
+
+    margin-left: 75px;
+
+    i {
+        display: none;
+    }
+
+    h2 {
+        color: $color__link-visited;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+
+    ul {
+
+        list-style: none;
+
+        margin: 0;
+
+        padding: 0;
+
+    }
+
+    a {
+
+        color: $color_background;
+        padding: 10px;
+        text-decoration: none;
+
+    }
 
 }

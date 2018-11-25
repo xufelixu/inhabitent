@@ -56,7 +56,7 @@
    * Sets or removes .focus class on an element.
    */
   function toggleFocus() {
-    let self = this
+    let self = this;
 
     // Move up through the ancestors of the current link until we hit .nav-menu.
     while (self.className.indexOf('nav-menu') === -1) {
@@ -110,23 +110,3 @@
 
 })
 ();
-
-// search bar 
-
-
-(function ($) {
-  $('.search-form').on("click", function (event) {
-    event.preventDefault();
-
-    $(".search-field").addClass("show");
-    $(".search-field").focus();
-
-  });
-
-
-  $(".search-field").on("blur", function () {
-    $(".search-field").removeClass("show");
-  });
-
-});
-(jQuery);
