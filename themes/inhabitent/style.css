@@ -233,6 +233,48 @@ th {
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
+@font-face {
+  font-family: 'Merriweather';
+  src: url("../../fonts/Merriweather-Bold.eot");
+  src: url("../../fonts/Merriweather-Bold.ttf") format("embedded-opentype"), url("../../fonts/Merriweather-Bold.woff2") format("woff2"), url("../../fonts/Merriweather-Bold.woff") format("woff"), url("../../fonts/Merriweather-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Merriweather-BoldItalic';
+  src: url("../../fonts/Merriweather-BoldItalic.eot");
+  src: url("../../fonts/Merriweather-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../../fonts/Merriweather-BoldItalic.woff2") format("woff2"), url("../..fonts/Merriweather-BoldItalic.woff") format("woff"), url("../../fonts/Merriweather-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Merriweather-Light';
+  src: url("../../fonts/Merriweather-Light.eot");
+  src: url("../../fonts/Merriweather-Light.eot?#iefix") format("embedded-opentype"), url("../../fonts/Merriweather-Light.woff2") format("woff2"), url("../../fonts/Merriweather-Light.woff") format("woff"), url("../../fonts/Merriweather-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Merriweather-LightItalic';
+  src: url("../../fonts/Merriweather-LightItalic.eot");
+  src: url("../../fonts/Merriweather-LightItalic.eot?#iefix") format("embedded-opentype"), url("../../fonts/Merriweather-LightItalic.woff2") format("woff2"), url("../../fonts/Merriweather-LightItalic.woff") format("woff"), url("../../fonts/Merriweather-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Novovento Sans Web bold';
+  src: url("../../fonts/b413ee027a4f1bb9fc413556e2d13dc6.eot");
+  src: url("../../fonts/b413ee027a4f1bb9fc413556e2d13dc6.eot?#iefix") format("embedded-opentype"), url("../../fonts/b413ee027a4f1bb9fc413556e2d13dc6.woff2") format("woff2"), url("../../fonts/b413ee027a4f1bb9fc413556e2d13dc6.woff") format("woff"), url("../../fonts/b413ee027a4f1bb9fc413556e2d13dc6.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Novovento Sans Web';
+  src: url("../../fonts/6844c31ab1abba0bfbd8a27a62772627.eot");
+  src: url("../../fonts/6844c31ab1abba0bfbd8a27a62772627.eot?#iefix") format("embedded-opentype"), url("../../fonts/6844c31ab1abba0bfbd8a27a62772627.woff2") format("woff2"), url("../../fonts/6844c31ab1abba0bfbd8a27a62772627.woff") format("woff"), url("../../fonts/6844c31ab1abba0bfbd8a27a62772627.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -745,14 +787,14 @@ object {
   border-right: solid #e1e1e1 1px; }
   .blog .site-main .read-more {
     border: 1px solid black;
-    color: black;
+    color: #404040;
     padding: 10px;
     text-transform: uppercase;
     text-decoration: none;
     position: relative;
     left: 80px;
     bottom: 10px;
-    font-family: Novecento Sans Web, sans-serif; }
+    font-family: Novecento, sans-serif; }
   .blog .site-main a:hover {
     background-color: #248483;
     color: white; }
@@ -802,7 +844,7 @@ object {
       padding: 5px 15px;
       border: 1px solid;
       background-color: white;
-      color: black;
+      color: #404040;
       margin-right: 5px; }
       .single .journal-content-area .social-buttons .black-btn .fab {
         padding: 5px 10px; }
@@ -835,13 +877,13 @@ object {
       color: white;
       text-decoration: none; }
       .single .journal-content-area .entry-meta a:hover {
-        color: pink; }
+        color: purple; }
   .single .journal-content-area .entry-content {
-    font-family: Merriweather Web, serif;
+    font-family: Merriweather, serif;
     padding-left: 80px;
     padding-right: 50px; }
   .single .journal-content-area .entry-footer {
-    font-family: Merriweather Web, serif;
+    font-family: Merriweather, serif;
     padding-left: 80px;
     text-transform: uppercase;
     font-size: 15px; }
@@ -883,12 +925,12 @@ object {
   text-align: center;
   letter-spacing: 2px;
   text-transform: uppercase;
-  font-family: Novecento Sans Web, sans-serif; }
+  font-family: Novecento, sans-serif; }
 
 .page-template .entry-content p {
   max-width: 800px;
   margin: 10px 200px;
-  font-family: Merriweather Web, serif; }
+  font-family: Merriweather, serif; }
 
 .product-template-default .entry-header {
   position: relative; }
@@ -910,7 +952,7 @@ object {
 
 .product-template-default .entry-content p {
   position: absolute;
-  font-family: Merriweather Web, serif;
+  font-family: Merriweather, serif;
   width: 40%;
   top: 170px;
   left: 650px;
@@ -931,7 +973,7 @@ object {
     padding: 5px 35px;
     border: 1px solid;
     background-color: white;
-    color: black; }
+    color: #404040; }
     .product-template-default .entry-content .social-buttons .black-btn .fab {
       padding: 5px 10px; }
 
@@ -940,7 +982,7 @@ object {
 
 .home .entry-title a {
   text-decoration: none;
-  color: black; }
+  color: #404040; }
 
 .home .content-area {
   width: 100%; }
@@ -954,7 +996,7 @@ object {
   text-align: center;
   line-height: 1.25;
   clear: both;
-  font-family: Novecento Sans Web, sans-serif;
+  font-family: Novecento, sans-serif;
   letter-spacing: 2px;
   text-transform: uppercase;
   margin: 50px; }
@@ -1022,7 +1064,7 @@ object {
     left: 20px;
     top: 290px;
     padding: 10px;
-    color: black; }
+    color: #404040; }
   .home .front-page_journal a:hover {
     background-color: #248483;
     color: white; }
@@ -1032,24 +1074,29 @@ object {
     width: 90%; }
     .home .front-page_journal .entry-meta-title a:hover {
       background-color: white;
-      color: plum; }
+      color: purple; }
 
 .archive .page-title {
   text-align: center;
   margin-top: 50px;
   text-transform: uppercase;
-  font-family: Novecento Sans Web, sans-serif;
+  font-family: Novecento, sans-serif;
   letter-spacing: 2px; }
 
 .archive .archive-frontpage-shop {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-size: 25px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 0px 200px;
-  margin-bottom: 50px; }
+  margin: 10px 50px 50px 100px;
+  position: relative;
+  left: 50px;
+  border-bottom: dotted #666;
+  width: 78%;
+  padding-bottom: 50px; }
   .archive .archive-frontpage-shop p {
     margin: 0 10px;
     padding: 10px;
@@ -1058,30 +1105,26 @@ object {
       text-decoration: none;
       color: #248483; }
       .archive .archive-frontpage-shop p a:hover {
-        color: plum; }
+        color: purple; }
 
 .archive .product-link-title {
   width: 250px;
   font-size: 15px;
   font-weight: 400;
-  font-family: Merriweather Web, serif;
+  position: relative;
+  top: 50px;
   letter-spacing: 0;
   padding-right: .25rem;
   text-transform: none;
   text-align: left;
   padding-left: 5px;
   text-transform: uppercase;
-  overflow: hidden;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1; }
-  .archive .product-link-title:after {
-    content: '.................'; }
+  overflow: hidden; }
 
 .archive .price {
   position: absolute;
   right: 5px;
-  top: 257px; }
+  top: 305px; }
 
 .archive .product-link {
   border: 1px solid #e1e1e1;
@@ -1092,22 +1135,23 @@ object {
   height: 250px; }
 
 .archive .archive-php-page {
-  margin-left: 100px;
+  margin-bottom: 50px;
+  margin-left: 150px;
   display: grid;
-  grid-gap: 10px;
+  grid-gap: 40px;
   grid-template-columns: 250px 250px 250px 250px;
-  grid-template-rows: 300px 300px 300px 300px; }
+  grid-template-rows: 350px 350px 350px 350px; }
 
 .archive .dots {
   position: absolute;
-  right: 10px;
-  top: 190px;
+  right: 70px;
+  top: 300px;
   overflow: hidden;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1; }
   .archive .dots:after {
-    content: '............'; }
+    content: '...............'; }
 
 .tax-product_type .description {
   font-family: Merriweather Web, serif;

@@ -1,5 +1,5 @@
 {
-  "name": "redstarter",
+  "name": "inhibatent",
   "version": "1.1.0",
   "description": "A starter theme for RED students, based on Underscores.",
   "dependencies": {},
@@ -25,10 +25,10 @@
     "type": "git",
     "url": "git+https://github.com/redacademy/redstarter.git"
   },
-  "author": "redacademy",
+  "author": "Felix",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/redacademy/redstarter/issues"
+    "url": "https://xufelixu.github.io/inhabitent/"
   },
-  "homepage": "https://github.com/redacademy/redstarter#readme"
+  "homepage": "https://github.com/xufelixu/inhabitent/"
 }

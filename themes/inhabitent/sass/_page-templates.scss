@@ -10,23 +10,23 @@
     .site-main {
         width: 66%;
 
-        border-right: solid #e1e1e1 1px;
+        border-right: solid $color_border 1px;
 
         .read-more {
             border: 1px solid black;
-            color: black;
+            color: $color__text-main;
             padding: 10px;
             text-transform: uppercase;
             text-decoration: none;
             position: relative;
             left: 80px;
             bottom: 10px;
-            font-family: Novecento Sans Web, sans-serif;
+            font-family: Novecento, sans-serif;
         }
 
         a:hover {
-            background-color: #248483;
-            color: white;
+            background-color: $color_background;
+            color: $color_white;
         }
     }
 
@@ -54,11 +54,11 @@
             position: absolute;
             top: 70px;
             left: 80px;
-            background-color: #248483;
+            background-color: $color_background;
             padding: 10px;
 
             a {
-                color: white;
+                color: $color_white;
                 text-decoration: none;
             }
 
@@ -70,10 +70,10 @@
         .entry-meta {
             position: absolute;
             bottom: 12px;
-            background-color: #248483;
+            background-color: $color_background;
             left: 400px;
             padding: 2px 8px;
-            color: white;
+            color: $color_white;
         }
 
         //journal meta
@@ -89,7 +89,6 @@
 
         .social-buttons {
             display: flex;
-
             position: relative;
             left: 80px;
             bottom: 20px;
@@ -100,8 +99,8 @@
             .black-btn {
                 padding: 5px 15px;
                 border: 1px solid;
-                background-color: white;
-                color: black;
+                background-color: $color_white;
+                color: $color__text-main;
                 margin-right: 5px;
 
                 .fab {
@@ -113,7 +112,7 @@
         }
 
 
-        border-right: solid #e1e1e1 1px;
+        border-right: solid $color_border 1px;
         width: 66%;
 
         h3 {
@@ -136,26 +135,26 @@
             position: absolute;
             top: 130px;
             left: 80px;
-            background-color: #248483;
+            background-color: $color_background;
             padding: 10px;
             font-size: 16px;
-            color: white;
+            color: $color_white;
         }
 
         .entry-meta {
             position: absolute;
             bottom: 84px;
-            background-color: #248483;
+            background-color: $color_background;
             left: 400px;
             padding: 2px 8px;
-            color: white;
+            color: $color_white;
 
             a {
-                color: white;
+                color: $color_white;
                 text-decoration: none;
 
                 &:hover {
-                    color: pink;
+                    color: $color__link-visited;
                 }
 
             }
@@ -163,20 +162,20 @@
         }
 
         .entry-content {
-            font-family: Merriweather Web, serif;
+            font-family: Merriweather, serif;
             padding-left: 80px;
             padding-right: 50px;
         }
 
         .entry-footer {
-            font-family: Merriweather Web, serif;
+            font-family: Merriweather, serif;
             padding-left: 80px;
             text-transform: uppercase;
             font-size: 15px;
 
             a {
                 text-decoration: none;
-                color: #248483;
+                color: $color_background;
             }
 
             .tags-links {
@@ -204,7 +203,7 @@
 
 .page-template-default {
     .content-area {
-        border-right: 1px solid #e1e1e1;
+        border-right: 1px solid $color_border;
         width: 66%;
     }
 
@@ -246,13 +245,13 @@
             text-align: center;
             letter-spacing: 2px;
             text-transform: uppercase;
-            font-family: Novecento Sans Web, sans-serif;
+            font-family: Novecento, sans-serif;
         }
 
         p {
             max-width: 800px;
             margin: 10px 200px;
-            font-family: Merriweather Web, serif;
+            font-family: Merriweather, serif;
         }
     }
 }
@@ -289,7 +288,7 @@
     .entry-content {
         p {
             position: absolute;
-            font-family: Merriweather Web, serif;
+            font-family: Merriweather, serif;
             width: 40%;
             top: 170px;
             left: 650px;
@@ -308,8 +307,8 @@
             .black-btn {
                 padding: 5px 35px;
                 border: 1px solid;
-                background-color: white;
-                color: black;
+                background-color: $color_white;
+                color: $color__text-main;
 
                 .fab {
                     padding: 5px 10px;
@@ -332,7 +331,7 @@
 .home {
     .entry-title a {
         text-decoration: none;
-        color: black;
+        color: $color__text-main;
     }
 
     .content-area {
@@ -349,7 +348,7 @@
         text-align: center;
         line-height: 1.25;
         clear: both;
-        font-family: Novecento Sans Web, sans-serif;
+        font-family: Novecento, sans-serif;
         letter-spacing: 2px;
         text-transform: uppercase;
         margin: 50px;
@@ -368,7 +367,7 @@
         }
 
         .frontpage-term {
-            border: 1px solid #e1e1e1;
+            border: 1px solid $color_border;
             border-top-width: 5px;
             width: 25%;
             margin-left: 15px;
@@ -379,9 +378,9 @@
 
             a {
                 text-decoration: none;
-                background-color: #248483;
+                background-color: $color_background;
                 padding: 10px;
-                color: white;
+                color: $color_white;
                 text-transform: uppercase;
                 letter-spacing: 3px;
             }
@@ -401,7 +400,7 @@
 
         .journal-entry {
             width: 25%;
-            border: 1px solid #e1e1e1;
+            border: 1px solid $color_border;
             margin-left: 15px;
             height: 350px;
             position: relative;
@@ -409,7 +408,7 @@
 
         a {
             text-decoration: none;
-            color: #248483;
+            color: $color_background;
             display: flex;
             text-transform: uppercase;
             justify-content: flex-start;
@@ -422,12 +421,12 @@
             left: 20px;
             top: 290px;
             padding: 10px;
-            color: black;
+            color: $color__text-main;
         }
 
         a:hover {
-            background-color: #248483;
-            color: white;
+            background-color: $color_background;
+            color: $color_white;
         }
 
         .entry-meta-title a {
@@ -436,8 +435,8 @@
             width: 90%;
 
             &:hover {
-                background-color: white;
-                color: plum;
+                background-color: $color_white;
+                color: $color__link-visited;
             }
         }
     }
@@ -450,16 +449,20 @@
         text-align: center;
         margin-top: 50px;
         text-transform: uppercase;
-        font-family: Novecento Sans Web, sans-serif;
+        font-family: Novecento, sans-serif;
         letter-spacing: 2px;
     }
 
     .archive-frontpage-shop {
         display: flex;
-
+        font-size: 25px;
         justify-content: center;
-        margin: 0px 200px;
-        margin-bottom: 50px;
+        margin: 10px 50px 50px 100px;
+        position: relative;
+        left: 50px;
+        border-bottom: dotted $color__border-abbr;
+        width: 78%;
+        padding-bottom: 50px;
 
         p {
             margin: 0 10px;
@@ -468,10 +471,10 @@
 
             a {
                 text-decoration: none;
-                color: #248483;
+                color: $color_background;
 
                 &:hover {
-                    color: plum;
+                    color: $color__link-visited;
                 }
             }
         }
@@ -485,7 +488,8 @@
         width: 250px;
         font-size: 15px;
         font-weight: 400;
-        font-family: Merriweather Web, serif;
+        position: relative;
+        top: 50px;
         letter-spacing: 0;
         padding-right: .25rem;
         text-transform: none;
@@ -493,21 +497,18 @@
         padding-left: 5px;
         text-transform: uppercase;
         overflow: hidden;
-        flex: 1;
 
-        &:after {
-            content: '.................';
-        }
+
     }
 
     .price {
         position: absolute;
         right: 5px;
-        top: 257px;
+        top: 305px;
     }
 
     .product-link {
-        border: 1px solid #e1e1e1;
+        border: 1px solid $color_border;
         position: relative;
     }
 
@@ -517,22 +518,24 @@
     }
 
     .archive-php-page {
-        margin-left: 100px;
+        margin-bottom: 50px;
+        margin-left: 150px;
         display: grid;
-        grid-gap: 10px;
+        grid-gap: 40px;
         grid-template-columns: 250px 250px 250px 250px;
-        grid-template-rows: 300px 300px 300px 300px;
+        grid-template-rows: 350px 350px 350px 350px;
+
     }
 
     .dots {
         position: absolute;
-        right: 10px;
-        top: 190px;
+        right: 70px;
+        top: 300px;
         overflow: hidden;
         flex: 1;
 
         &:after {
-            content: '............';
+            content: '...............';
         }
     }
 }
@@ -547,7 +550,7 @@
         padding: 20px;
         font-weight: 400;
         width: 88%;
-        border-bottom: dotted #e1e1e1;
+        border-bottom: dotted $color_border;
         position: relative;
         left: 110px;
 
