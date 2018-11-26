@@ -8,6 +8,14 @@
 
 .blog {
     .site-main {
+
+        article {
+            position: relative;
+            left: 60px;
+
+        }
+
+        padding-bottom:100px;
         width: 66%;
 
         border-right: solid $color_border 1px;
@@ -15,13 +23,14 @@
         .read-more {
             border: 1px solid black;
             color: $color__text-main;
-            padding: 10px;
+            padding: 20px 30px;
             text-transform: uppercase;
             text-decoration: none;
             position: relative;
-            left: 80px;
-            bottom: 10px;
+            left: 142px;
+            bottom: 0px;
             font-family: Novecento, sans-serif;
+
         }
 
         a:hover {
@@ -30,11 +39,17 @@
         }
     }
 
+
     //jounal content
 
     .entry-content {
         padding-left: 80px;
         padding-right: 25px;
+
+        p {
+            width: 90%;
+            font-size: 24px;
+        }
     }
 
     //journal content
@@ -43,9 +58,11 @@
         position: relative;
 
         img {
-            padding-top: 40px;
+            padding-top: 20px;
             margin-left: 80px;
             margin-bottom: 5px;
+            height: auto;
+            width: 80%;
         }
 
         //journal image
@@ -55,7 +72,8 @@
             top: 70px;
             left: 80px;
             background-color: $color_background;
-            padding: 10px;
+            padding: 30px;
+            font-size: 30px;
 
             a {
                 color: $color_white;
@@ -71,9 +89,10 @@
             position: absolute;
             bottom: 12px;
             background-color: $color_background;
-            left: 400px;
-            padding: 2px 8px;
+            left: 380px;
+            padding: 5px 40px;
             color: $color_white;
+            font-size: 20px;
         }
 
         //journal meta
@@ -82,10 +101,14 @@
 
 }
 
+
+
+
 //single journal page
 
 .single {
     .journal-content-area {
+
 
         .social-buttons {
             display: flex;
@@ -129,6 +152,8 @@
             padding-top: 40px;
             margin-left: 80px;
             margin-bottom: 5px;
+            height: auto;
+            width: 85%;
         }
 
         .entry-title {
@@ -139,15 +164,18 @@
             padding: 10px;
             font-size: 16px;
             color: $color_white;
+            font-size: 30px;
         }
 
         .entry-meta {
             position: absolute;
-            bottom: 84px;
+            bottom: -145px;
+
             background-color: $color_background;
-            left: 400px;
-            padding: 2px 8px;
+            left: 466px;
+            padding: 5px 20px;
             color: $color_white;
+            font-size: 20px;
 
             a {
                 color: $color_white;
@@ -165,6 +193,7 @@
             font-family: Merriweather, serif;
             padding-left: 80px;
             padding-right: 50px;
+            font-size: 20px;
         }
 
         .entry-footer {
