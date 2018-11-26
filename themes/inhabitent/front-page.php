@@ -71,8 +71,8 @@ foreach($terms as $term): ?>
    $joural_posts = get_posts( $args ); // returns an array of posts
 			?> 
 		<section class="front-page_journal">	
-<?php foreach ( $joural_posts as $post ) : setup_postdata( $post ); ?>
-   <article class="journal-entry">
+        <?php foreach ( $joural_posts as $post ) : setup_postdata( $post ); ?>
+        <article class="journal-entry">
    
    <?php 
    if (has_post_thumbnail()){
@@ -96,70 +96,85 @@ Read More
 
 </section><!-- #front journal entries info-->
 
-<div class="adventures container">
-
-<h2>latest adventures</h2>
-
-</div>
-
-<section class="story-wrapper">  
-
-	<div class="adventure-canoe">
-
-		<p>Getting Back to Nature in a Canoe</p>     
-
-		<div>
-
-			<a class="read-entry" href="<?php the_permalink(); ?>"> Read More </a>
-
-		</div>
-
-	</div>
-
-	<div class="adventure-beach">
-
-		<p>A Night with Friends at the Beach</p>     
-
-		<div>
-
-			<a class="read-entry" href="<?php the_permalink(); ?>"> Read More </a>
-
-		</div>
-
-	</div>
-
-	<div class="adventure-sky">
-
-		<p>Star-Gazing at the Night Sky</p>     
-
-		<div>
-
-			<a class="read-entry" href="<?php the_permalink(); ?>"> Read More </a>
-
-		</div>
-
-	</div>
-
-	<div class="adventure-mountain">
-
-		<p>Taking in the View at Big Mountain</p>     
-
-		<div>
-
-			<a class="read-entry" href="<?php the_permalink(); ?>"> Read More </a>
-
-		</div>
-
-	</div>
-
-	<button>more adventures</button>
-
-</section><!-- adventures -->
 
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
 
-<?php get_footer(); ?>
+<!--Adventures Section -->
+
+	<?php
+
+$args = array(
+
+'order' => 'ASC',
+
+'post_type' => 'adventure',
+
+);
+
+$adventure_posts = get_posts( $args ); 
+
+?>
+
+<h2 class="front-title">Latest Adventures</h2>
+
+<section class="adventures-section">
+
+<div class="stories-section">
+
+	<?php foreach ( $adventure_posts as $post ) : setup_postdata( $post ); ?>
+
+		<article class="adventure">
+
+	
+
+			<?php 
+
+				if ( has_post_thumbnail() ) {
+
+					the_post_thumbnail('large'); 
+
+				} 
+
+			?>
+
+			<div class="story-info">
+
+				<div class="adv-title">
+
+					<a href="<?php get_the_permalink(); ?>">
+						<?php the_title(); ?>
+					</a>
+
+				</div>
+
+				<a class="white-btn" href="<?php echo get_the_permalink(); ?>">
+
+					read more
+
+				</a>
+
+			</div>	
+
+		</article>
+
+	<?php endforeach; wp_reset_postdata(); ?>
+
+</div><!-- stories-container  -->
+
+
+
+<a class="brand-btn" href="<?php echo get_the_permalink(); ?>">
+
+	more adventures
+
+</a>
+
+</section>
+
+
+
+</main><!-- #main -->
+
+</div><!-- #primary -->
 
 

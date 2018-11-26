@@ -365,6 +365,10 @@
 //home page
 
 .home {
+
+
+
+
     .entry-title a {
         text-decoration: none;
         color: $color__text-main;
@@ -388,6 +392,7 @@
         letter-spacing: 2px;
         text-transform: uppercase;
         margin: 50px;
+        font-size: 45px;
     }
 
     .frontpage-shop {
@@ -434,7 +439,91 @@
 
             }
         }
+
+
     }
+
+
+
+    .adventures-section {
+
+
+        div.stories-section {
+
+            display: flex;
+            flex-wrap: wrap;
+            padding: 10px;
+        }
+
+        article.adventure {
+            padding: 20px;
+            flex-wrap: wrap;
+
+            &:nth-child(4) {
+                order: 1;
+                border: solid orange;
+
+                img {
+                    height: 854px;
+                    object-fit: cover;
+                }
+            }
+
+            &:first-child {
+                order: 4;
+                border: solid red;
+                flex-shrink: 4;
+                flex-wrap: wrap;
+
+                img {
+                    height: 235px;
+                    width: 300px;
+                }
+            }
+
+            &:nth-child(2) {
+                order: 3;
+                border: solid blue;
+
+                img {
+
+                    width: 300px;
+                    height: 235px;
+                }
+            }
+
+            &:nth-child(3) {
+                border: solid green;
+                order: 2;
+                flex-shrink: 4;
+                height: 470px;
+            }
+
+
+        }
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 .front-page_journal {
@@ -442,21 +531,23 @@
     justify-content: center;
     text-align: center;
 
+
     .entry-meta {
-        font-size: 10px;
+        font-size: 15px;
         position: relative;
-        left: -90px;
+        left: -70px;
 
     }
 
     .journal-entry {
-        width: 25%;
+        width: 27%;
         border: 1px solid $color_border;
         margin-left: 15px;
         height: 500px;
         position: relative;
 
         img {
+
             width: 120%;
 
         }
@@ -508,6 +599,7 @@
         text-transform: uppercase;
         font-family: Novecento, sans-serif;
         letter-spacing: 2px;
+        font-size: 46px;
     }
 
     .archive-frontpage-shop {
