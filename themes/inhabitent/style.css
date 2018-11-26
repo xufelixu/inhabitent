@@ -541,42 +541,57 @@ a {
   text-align: right;
   width: 50%; }
 
+.search-form-site-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.site-header {
+  width: 100%;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
 .logo-tent {
   height: 40px;
   width: 40px;
   margin-left: 100px; }
 
 .header-green-logo-tent {
-  position: relative;
   border-bottom: 1px solid #e1e1e1e1;
   margin-bottom: 0px; }
 
 .main-navigation {
-  max-width: 50%;
+  margin-right: 40px;
   text-transform: uppercase;
-  position: absolute;
-  top: 30px;
-  right: 0px; }
+  font-size: 20px; }
   .main-navigation li {
     padding: 10px; }
   .main-navigation a {
-    color: #248a83; }
+    color: white; }
 
 .search-form {
-  position: absolute;
-  top: 0px;
-  right: 10px;
+  position: relative;
   border: none;
-  margin: 5px;
-  padding: 0px; }
-  .search-form .search-submit {
+  margin-right: 40px;
+  top: -10px; }
+  .search-form .icon-search {
+    position: relative;
+    color: white;
+    top: 30px;
+    right: 30px;
+    font-size: 20px; }
+  .search-form .search-field {
+    width: 280px;
     border: none;
-    background: transparent;
-    top: 30px; }
-  .search-form .search_field {
-    background: transparent;
-    border: none;
-    color: #248a83; }
+    display: none;
+    font-size: 20px; }
+  .search-form form {
+    border: none; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -1067,7 +1082,6 @@ object {
   padding: 10px; }
 
 .home .adventures-section article.adventure {
-  padding: 20px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
   .home .adventures-section article.adventure:nth-child(4) {

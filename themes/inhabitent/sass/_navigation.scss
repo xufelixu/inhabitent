@@ -137,27 +137,40 @@ a {
 
 // header menu
 
+.search-form-site-navigation {
+
+	display: flex;
+
+}
+
+
+.site-header {
+	width: 100%;
+	position: fixed;
+	display: flex;
+	justify-content: space-between;
+
+}
+
 .logo-tent {
 	height: 40px;
 	width: 40px;
-
 	margin-left: 100px;
+
 
 }
 
 .header-green-logo-tent {
-	position: relative;
+
 	border-bottom: 1px solid #e1e1e1e1;
 	margin-bottom: 0px;
 }
 
 .main-navigation {
-
-	max-width: 50%;
+	margin-right: 40px;
 	text-transform: uppercase;
-	position: absolute;
-	top: 30px;
-	right: 0px;
+	font-size: 20px;
+
 
 	li {
 		padding: 10px;
@@ -165,7 +178,7 @@ a {
 
 	a {
 
-		color: #248a83;
+		color: $color_white;
 	}
 
 }
@@ -173,28 +186,33 @@ a {
 //search bar
 
 .search-form {
-	position: absolute;
-	top: 0px;
-	right: 10px;
+	position: relative;
 	border: none;
-	margin: 5px;
-	padding: 0px;
+	margin-right: 40px;
+	top: -10px;
 
-	.search-submit {
 
-		border: none;
-		background: transparent;
+	.icon-search {
+
+		position: relative;
+		color: $color_white;
 		top: 30px;
-
-
+		right: 30px;
+		font-size: 20px;
 
 	}
 
-	.search_field {
-		background: transparent;
+	.search-field {
+		width: 280px;
 		border: none;
-		color: #248a83;
-
+		display: none;
+		font-size: 20px;
 
 	}
+
+	form {
+
+		border: none;
+	}
+
 }

@@ -177,4 +177,6 @@ $adventure_posts = get_posts( $args );
 
 </div><!-- #primary -->
 
+<?php get_footer(); ?>
+
 
