@@ -1,21 +1,54 @@
-# RED Starter
 
-A WordPress starter theme for RED Academy students, forked from Underscores.
+# Inhibatent Prject in WordPress
+ #### screen shot of Inhibatent
+<img src="./screenShot/adv.png" alt="adventure"/>
+<img src="./screenShot/Jurnal.png" alt="jurnal"/>
+<img src="./screenShot/shop.png" alt="shop"/>
 
-## Installation
+## Pre-requirements
+* Git
+* MAMP
+* VS Code
+* WordPress Installation
+  * inhabitent-business-hours (plugin)
+  * inhabitent Functionality (plugin)
+  * Gutenberg (plugin)
+* Red Start Theme
 
-### 1. Download me (don't clone me!)
+## Language & Technology
+* PHP
+* HTML
+* JQUERY
+* CSS/SCSS
+* JAVASCRIPT
+* WordPress Function 
+  * add_filter
+  * add_action
+* Custom Page Templates 
+* Functionality Plugins
+* Custom Taxonomies
+* Custom Post Loops
+ * query_posts()
+ * WP_Query
+ * get_posts()
+ ## Contributing Links
+ * https://generatewp.com/taxonomy/
+ * https://codex.wordpress.org/Widgets_API
+ * https://developer.wordpress.org/reference/functions/add_action/
 
-Then add me to your `wp-content` directory.
+## Authors  
+  * Felix 
 
-### 2. Rename the `redstarter-master` directory
+## Acknowledgments
+* Ben
+* Jim
+## License
+* This project is licensed under the RED License   
 
-Make sure that the theme directory name is project appropriate!
 
-### 3. Install the dev dependencies
 
-Next you'll need to run `npm install` **inside your theme directory** next to install the node modules you'll need for Gulp, etc.
 
-### 4. Update the proxy in `gulpfile.js`
 
-Lastly, be sure to update your `gulpfile.js` with the appropriate URL for the Browsersync proxy (so change `localhost[:port-here]/[your-dir-name-here]` to the appropriate localhost URL).
+
+
+
