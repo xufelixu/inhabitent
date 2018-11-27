@@ -798,6 +798,7 @@ object {
 --------------------------------------------------------------*/
 /* Front page */
 .blog .site-main {
+  padding-top: 60px;
   padding-bottom: 100px;
   width: 66%;
   border-right: solid #e1e1e1 1px; }
@@ -852,6 +853,9 @@ object {
     color: white;
     font-size: 20px; }
 
+.single .site-main {
+  padding-top: 60px; }
+
 .single .journal-content-area {
   border-right: solid #e1e1e1 1px;
   width: 66%; }
@@ -895,14 +899,17 @@ object {
     font-size: 16px;
     color: white;
     font-size: 30px; }
+  .single .journal-content-area .entry-header {
+    position: relative; }
   .single .journal-content-area .entry-meta {
     position: absolute;
-    bottom: -145px;
     background-color: #248483;
-    left: 466px;
-    padding: 5px 20px;
+    padding: 5px 15px;
     color: white;
-    font-size: 20px; }
+    font-size: 20px;
+    max-width: 100%;
+    bottom: 12px;
+    right: 60px; }
     .single .journal-content-area .entry-meta a {
       color: white;
       text-decoration: none; }
@@ -1225,7 +1232,7 @@ object {
       background-color: white;
       color: purple; }
 
-.home .archive .page-title {
+.archive .page-title {
   text-align: center;
   margin-top: 50px;
   text-transform: uppercase;
@@ -1233,7 +1240,7 @@ object {
   letter-spacing: 2px;
   font-size: 46px; }
 
-.home .archive .archive-frontpage-shop {
+.archive .archive-frontpage-shop {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1247,17 +1254,20 @@ object {
   border-bottom: dotted #666;
   width: 78%;
   padding-bottom: 50px; }
-  .home .archive .archive-frontpage-shop p {
+  .archive .archive-frontpage-shop p {
     margin: 0 10px;
     padding: 10px;
     text-transform: uppercase; }
-    .home .archive .archive-frontpage-shop p a {
+    .archive .archive-frontpage-shop p a {
       text-decoration: none;
       color: #248483; }
-      .home .archive .archive-frontpage-shop p a:hover {
+      .archive .archive-frontpage-shop p a:hover {
         color: purple; }
 
-.home .archive .product-link-title {
+.archive .site-main {
+  padding-top: 60px; }
+
+.archive .product-link-title {
   width: 250px;
   font-size: 15px;
   font-weight: 400;
@@ -1271,20 +1281,20 @@ object {
   text-transform: uppercase;
   overflow: hidden; }
 
-.home .archive .price {
+.archive .price {
   position: absolute;
   right: 5px;
   top: 305px; }
 
-.home .archive .product-link {
+.archive .product-link {
   border: 1px solid #e1e1e1;
   position: relative; }
 
-.home .archive .product-link img {
+.archive .product-link img {
   width: 250px;
   height: 250px; }
 
-.home .archive .archive-php-page {
+.archive .archive-php-page {
   margin-bottom: 50px;
   margin-left: 150px;
   display: grid;
@@ -1292,7 +1302,7 @@ object {
   grid-template-columns: 250px 250px 250px 250px;
   grid-template-rows: 350px 350px 350px 350px; }
 
-.home .archive .dots {
+.archive .dots {
   position: absolute;
   right: 70px;
   top: 300px;
@@ -1300,10 +1310,10 @@ object {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1; }
-  .home .archive .dots:after {
+  .archive .dots:after {
     content: '...............'; }
 
-.home .tax-product_type .description {
+.archive .tax-product_type .description {
   font-family: Merriweather Web, serif;
   text-align: center;
   padding: 20px;
@@ -1313,31 +1323,31 @@ object {
   position: relative;
   left: 110px; }
 
-.home .tax-product_type .archive-php-page {
+.archive .tax-product_type .archive-php-page {
   display: grid;
   grid-template-columns: 250px 250px 250px 250px;
   grid-template-rows: 300px;
   margin-bottom: 30px;
   padding-top: 50px; }
 
-.home .error-404 {
+.error-404 {
   margin-top: 100px;
   margin-left: 75px; }
-  .home .error-404 h1.page-title {
+  .error-404 h1.page-title {
     font-size: 48px; }
-  .home .error-404 .page-content {
+  .error-404 .page-content {
     font-size: 28px; }
-  .home .error-404 i {
+  .error-404 i {
     display: none; }
-  .home .error-404 h2 {
+  .error-404 h2 {
     color: purple;
     margin-bottom: 30px;
     margin-top: 30px; }
-  .home .error-404 ul {
+  .error-404 ul {
     list-style: none;
     margin: 0;
     padding: 0; }
-  .home .error-404 a {
+  .error-404 a {
     color: #248483;
     padding: 10px;
     text-decoration: none; }
