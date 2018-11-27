@@ -149,7 +149,8 @@ a {
 	position: fixed;
 	display: flex;
 	justify-content: space-between;
-
+	border-bottom: 1px solid $color__border-abbr;
+	z-index: 10;
 }
 
 .logo-tent {
@@ -162,7 +163,7 @@ a {
 
 .header-green-logo-tent {
 
-	border-bottom: 1px solid #e1e1e1e1;
+
 	margin-bottom: 0px;
 }
 
@@ -177,8 +178,7 @@ a {
 	}
 
 	a {
-
-		color: $color_white;
+		color: $color_background;
 	}
 
 }
@@ -195,7 +195,7 @@ a {
 	.icon-search {
 
 		position: relative;
-		color: $color_white;
+		color: $color_background;
 		top: 30px;
 		right: 30px;
 		font-size: 20px;

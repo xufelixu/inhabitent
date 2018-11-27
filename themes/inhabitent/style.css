@@ -554,7 +554,9 @@ a {
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
+          justify-content: space-between;
+  border-bottom: 1px solid #666;
+  z-index: 10; }
 
 .logo-tent {
   height: 40px;
@@ -562,7 +564,6 @@ a {
   margin-left: 100px; }
 
 .header-green-logo-tent {
-  border-bottom: 1px solid #e1e1e1e1;
   margin-bottom: 0px; }
 
 .main-navigation {
@@ -572,7 +573,7 @@ a {
   .main-navigation li {
     padding: 10px; }
   .main-navigation a {
-    color: white; }
+    color: #248483; }
 
 .search-form {
   position: relative;
@@ -581,7 +582,7 @@ a {
   top: -10px; }
   .search-form .icon-search {
     position: relative;
-    color: white;
+    color: #248483;
     top: 30px;
     right: 30px;
     font-size: 20px; }
@@ -1074,55 +1075,106 @@ object {
       top: 50px; }
 
 .home .adventures-section div.stories-section {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding: 10px; }
-
-.home .adventures-section article.adventure {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
-  .home .adventures-section article.adventure:nth-child(4) {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-    border: solid orange; }
-    .home .adventures-section article.adventure:nth-child(4) img {
-      height: 854px;
+  display: grid;
+  margin: 100px;
+  grid-gap: 20px;
+  grid-template-areas: 'first first second second' 'first first third fourth '; }
+  .home .adventures-section div.stories-section a {
+    text-decoration: none;
+    color: white; }
+    .home .adventures-section div.stories-section a:hover {
+      color: #fff9c0; }
+  .home .adventures-section div.stories-section .white-btn {
+    font-size: 30px;
+    border: 1px solid white;
+    padding: 10px 20px; }
+    .home .adventures-section div.stories-section .white-btn:hover {
+      background-color: #248483; }
+  .home .adventures-section div.stories-section article.adventure:first-child {
+    position: relative;
+    grid-area: first; }
+    .home .adventures-section div.stories-section article.adventure:first-child .adv-title {
+      position: absolute;
+      top: 80px;
+      left: 20px;
+      font-size: 50px;
+      text-align: left;
+      width: 75%; }
+    .home .adventures-section div.stories-section article.adventure:first-child .white-btn {
+      position: absolute;
+      left: 30px;
+      bottom: 200px; }
+    .home .adventures-section div.stories-section article.adventure:first-child img {
+      height: 650px;
       -o-object-fit: cover;
          object-fit: cover; }
-  .home .adventures-section article.adventure:first-child {
-    -webkit-box-ordinal-group: 5;
-        -ms-flex-order: 4;
-            order: 4;
-    border: solid red;
-    -ms-flex-negative: 4;
-        flex-shrink: 4;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
-    .home .adventures-section article.adventure:first-child img {
-      height: 235px;
-      width: 300px; }
-  .home .adventures-section article.adventure:nth-child(2) {
-    -webkit-box-ordinal-group: 4;
-        -ms-flex-order: 3;
-            order: 3;
-    border: solid blue; }
-    .home .adventures-section article.adventure:nth-child(2) img {
-      width: 300px;
-      height: 235px; }
-  .home .adventures-section article.adventure:nth-child(3) {
-    border: solid green;
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-    -ms-flex-negative: 4;
-        flex-shrink: 4;
-    height: 470px; }
+  .home .adventures-section div.stories-section article.adventure:nth-child(2) {
+    position: relative;
+    grid-area: second; }
+    .home .adventures-section div.stories-section article.adventure:nth-child(2) .adv-title {
+      position: absolute;
+      top: 50px;
+      left: 20px;
+      font-size: 50px;
+      text-align: left;
+      width: 75%; }
+    .home .adventures-section div.stories-section article.adventure:nth-child(2) .white-btn {
+      display: none; }
+    .home .adventures-section div.stories-section article.adventure:nth-child(2) img {
+      height: 300px;
+      -o-object-fit: cover;
+         object-fit: cover;
+      width: 700px; }
+  .home .adventures-section div.stories-section article.adventure:nth-child(3) {
+    position: relative;
+    grid-area: third; }
+    .home .adventures-section div.stories-section article.adventure:nth-child(3) .adv-title {
+      position: absolute;
+      top: 50px;
+      left: 20px;
+      font-size: 30px;
+      text-align: left;
+      width: 75%; }
+    .home .adventures-section div.stories-section article.adventure:nth-child(3) .white-btn {
+      position: absolute;
+      left: 30px;
+      bottom: 30px; }
+    .home .adventures-section div.stories-section article.adventure:nth-child(3) img {
+      height: 320px;
+      -o-object-fit: cover;
+         object-fit: cover; }
+  .home .adventures-section div.stories-section article.adventure:nth-child(4) {
+    position: relative;
+    grid-area: fourth; }
+  .home .adventures-section div.stories-section article.adventure .adv-title {
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    font-size: 30px;
+    text-align: left;
+    width: 75%; }
+  .home .adventures-section div.stories-section article.adventure .white-btn {
+    position: absolute;
+    left: 30px;
+    bottom: 30px; }
+  .home .adventures-section div.stories-section article.adventure img {
+    height: 320px;
+    -o-object-fit: cover;
+       object-fit: cover; }
 
-.front-page_journal {
+.home .adventures-section a.brand-btn {
+  position: relative;
+  font-size: 30px;
+  border: solid green;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  color: white;
+  background-color: #248483;
+  text-decoration: none;
+  left: 100px;
+  bottom: 70px; }
+
+.home .front-page_journal {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1130,19 +1182,19 @@ object {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center; }
-  .front-page_journal .entry-meta {
+  .home .front-page_journal .entry-meta {
     font-size: 15px;
     position: relative;
     left: -70px; }
-  .front-page_journal .journal-entry {
+  .home .front-page_journal .journal-entry {
     width: 27%;
     border: 1px solid #e1e1e1;
     margin-left: 15px;
     height: 500px;
     position: relative; }
-    .front-page_journal .journal-entry img {
+    .home .front-page_journal .journal-entry img {
       width: 120%; }
-  .front-page_journal a {
+  .home .front-page_journal a {
     font-size: 24px;
     text-decoration: none;
     color: #248483;
@@ -1155,25 +1207,25 @@ object {
             justify-content: flex-start;
     padding-top: 5px;
     margin-left: 10px; }
-  .front-page_journal .read-more {
+  .home .front-page_journal .read-more {
     border: 1px solid;
     position: absolute;
     left: 10px;
     top: 400px;
     padding: 10px;
     color: #404040; }
-  .front-page_journal a:hover {
+  .home .front-page_journal a:hover {
     background-color: #248483;
     color: white; }
-  .front-page_journal .entry-meta-title a {
+  .home .front-page_journal .entry-meta-title a {
     text-align: left;
     padding: 5px;
     width: 90%; }
-    .front-page_journal .entry-meta-title a:hover {
+    .home .front-page_journal .entry-meta-title a:hover {
       background-color: white;
       color: purple; }
 
-.archive .page-title {
+.home .archive .page-title {
   text-align: center;
   margin-top: 50px;
   text-transform: uppercase;
@@ -1181,7 +1233,7 @@ object {
   letter-spacing: 2px;
   font-size: 46px; }
 
-.archive .archive-frontpage-shop {
+.home .archive .archive-frontpage-shop {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1195,17 +1247,17 @@ object {
   border-bottom: dotted #666;
   width: 78%;
   padding-bottom: 50px; }
-  .archive .archive-frontpage-shop p {
+  .home .archive .archive-frontpage-shop p {
     margin: 0 10px;
     padding: 10px;
     text-transform: uppercase; }
-    .archive .archive-frontpage-shop p a {
+    .home .archive .archive-frontpage-shop p a {
       text-decoration: none;
       color: #248483; }
-      .archive .archive-frontpage-shop p a:hover {
+      .home .archive .archive-frontpage-shop p a:hover {
         color: purple; }
 
-.archive .product-link-title {
+.home .archive .product-link-title {
   width: 250px;
   font-size: 15px;
   font-weight: 400;
@@ -1219,20 +1271,20 @@ object {
   text-transform: uppercase;
   overflow: hidden; }
 
-.archive .price {
+.home .archive .price {
   position: absolute;
   right: 5px;
   top: 305px; }
 
-.archive .product-link {
+.home .archive .product-link {
   border: 1px solid #e1e1e1;
   position: relative; }
 
-.archive .product-link img {
+.home .archive .product-link img {
   width: 250px;
   height: 250px; }
 
-.archive .archive-php-page {
+.home .archive .archive-php-page {
   margin-bottom: 50px;
   margin-left: 150px;
   display: grid;
@@ -1240,7 +1292,7 @@ object {
   grid-template-columns: 250px 250px 250px 250px;
   grid-template-rows: 350px 350px 350px 350px; }
 
-.archive .dots {
+.home .archive .dots {
   position: absolute;
   right: 70px;
   top: 300px;
@@ -1248,10 +1300,10 @@ object {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1; }
-  .archive .dots:after {
+  .home .archive .dots:after {
     content: '...............'; }
 
-.tax-product_type .description {
+.home .tax-product_type .description {
   font-family: Merriweather Web, serif;
   text-align: center;
   padding: 20px;
@@ -1261,31 +1313,31 @@ object {
   position: relative;
   left: 110px; }
 
-.tax-product_type .archive-php-page {
+.home .tax-product_type .archive-php-page {
   display: grid;
   grid-template-columns: 250px 250px 250px 250px;
   grid-template-rows: 300px;
   margin-bottom: 30px;
   padding-top: 50px; }
 
-.error-404 {
+.home .error-404 {
   margin-top: 100px;
   margin-left: 75px; }
-  .error-404 h1.page-title {
+  .home .error-404 h1.page-title {
     font-size: 48px; }
-  .error-404 .page-content {
+  .home .error-404 .page-content {
     font-size: 28px; }
-  .error-404 i {
+  .home .error-404 i {
     display: none; }
-  .error-404 h2 {
+  .home .error-404 h2 {
     color: purple;
     margin-bottom: 30px;
     margin-top: 30px; }
-  .error-404 ul {
+  .home .error-404 ul {
     list-style: none;
     margin: 0;
     padding: 0; }
-  .error-404 a {
+  .home .error-404 a {
     color: #248483;
     padding: 10px;
     text-decoration: none; }
