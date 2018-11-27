@@ -43,6 +43,8 @@ textarea {
 	color: #666;
 	border: 1px solid #ccc;
 	border-radius: 3px;
+	background-color: #f4f4f4;
+	border: 1px solid #e1e1e1;
 
 	&:focus {
 		color: #111;
@@ -60,6 +62,8 @@ input[type="search"] {
 textarea {
 	padding-left: 3px;
 	width: 100%;
+	background-color: #f4f4f4;
+	border: 1px solid #e1e1e1;
 }
 
 .wpcf7-form {
@@ -71,4 +75,47 @@ textarea {
 }
 
 
-//search bar
+//single journal comment section
+.post-template-default {
+
+	p.comment-form-author,
+	p.comment-form-email {
+
+		width: 49%;
+		float: left;
+	}
+
+	input[type=email] {
+		width: 100%;
+	}
+
+	p.comment-form-email {
+		margin-left: 1%;
+	}
+
+	p.comment-form-author {
+
+		margin-right: 1%;
+
+	}
+
+	input[type=submit] {
+
+		font-size: 20px;
+	}
+
+
+	input[type=url] {
+
+		width: 100%;
+	}
+
+
+
+
+
+
+
+
+
+}

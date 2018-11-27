@@ -436,7 +436,9 @@ input[type="search"],
 textarea {
   color: #666;
   border: 1px solid #ccc;
-  border-radius: 3px; }
+  border-radius: 3px;
+  background-color: #f4f4f4;
+  border: 1px solid #e1e1e1; }
   input[type="text"]:focus,
   input[type="email"]:focus,
   input[type="url"]:focus,
@@ -454,10 +456,32 @@ input[type="search"] {
 
 textarea {
   padding-left: 3px;
-  width: 100%; }
+  width: 100%;
+  background-color: #f4f4f4;
+  border: 1px solid #e1e1e1; }
 
 .wpcf7-form span {
   color: orange; }
+
+.post-template-default p.comment-form-author,
+.post-template-default p.comment-form-email {
+  width: 49%;
+  float: left; }
+
+.post-template-default input[type=email] {
+  width: 100%; }
+
+.post-template-default p.comment-form-email {
+  margin-left: 1%; }
+
+.post-template-default p.comment-form-author {
+  margin-right: 1%; }
+
+.post-template-default input[type=submit] {
+  font-size: 20px; }
+
+.post-template-default input[type=url] {
+  width: 100%; }
 
 /*--------------------------------------------------------------
 # Navigation
@@ -855,6 +879,11 @@ object {
 
 .single .site-main {
   padding-top: 60px; }
+  .single .site-main .comments-area .comments-title {
+    font-size: 40px;
+    padding-left: 60px;
+    font-family: Merriweather-Bold, Novovento Sans Web bold;
+    margin-top: 30px; }
 
 .single .journal-content-area {
   border-right: solid #e1e1e1 1px;
@@ -875,21 +904,43 @@ object {
       border: 1px solid;
       background-color: white;
       color: #404040;
-      margin-right: 5px; }
+      margin-right: 5px;
+      font-size: 20px; }
       .single .journal-content-area .social-buttons .black-btn .fab {
         padding: 5px 10px; }
   .single .journal-content-area h3 {
     text-transform: uppercase;
-    margin-left: 70px; }
+    margin-left: 70px;
+    font-size: 38px;
+    padding: 30px 0px;
+    border-top: 1px solid #ccc;
+    width: 90%; }
   .single .journal-content-area .comment-form {
     margin-left: 70px;
     margin-right: 50px; }
-  .single .journal-content-area img {
-    padding-top: 40px;
-    margin-left: 80px;
-    margin-bottom: 5px;
-    height: auto;
-    width: 85%; }
+    .single .journal-content-area .comment-form P {
+      font-size: 24px; }
+  .single .journal-content-area p.comment-form-comment label {
+    padding: 10px; }
+  .single .journal-content-area ol.comment-list {
+    list-style: none;
+    padding-left: 40px; }
+    .single .journal-content-area ol.comment-list img {
+      border-radius: 50%;
+      float: left; }
+    .single .journal-content-area ol.comment-list a {
+      text-decoration: none;
+      color: #248483; }
+    .single .journal-content-area ol.comment-list .comment-content {
+      margin-left: 20px;
+      float: left;
+      font-size: 26px;
+      padding-bottom: 20px; }
+      .single .journal-content-area ol.comment-list .comment-content div.comment-author {
+        font-size: 20px;
+        font-family: Merriweather-Bold, Novovento Sans Web bold; }
+      .single .journal-content-area ol.comment-list .comment-content p {
+        padding-top: 10px; }
   .single .journal-content-area .entry-title {
     position: absolute;
     top: 130px;
@@ -901,6 +952,12 @@ object {
     font-size: 30px; }
   .single .journal-content-area .entry-header {
     position: relative; }
+    .single .journal-content-area .entry-header img {
+      padding-top: 40px;
+      margin-left: 80px;
+      margin-bottom: 5px;
+      height: auto;
+      width: 85%; }
   .single .journal-content-area .entry-meta {
     position: absolute;
     background-color: #248483;
