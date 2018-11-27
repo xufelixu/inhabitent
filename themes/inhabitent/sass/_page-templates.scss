@@ -1014,3 +1014,119 @@
     }
 
 }
+
+
+
+
+//Search php
+
+
+.search {
+
+    .site-header {
+        position: relative;
+        padding-bottom: 20px;
+    }
+
+    .site-content {
+
+        .content-area {
+
+
+            .site-main {
+                padding: 100px;
+
+                width: 70%;
+                border-right: 1px solid $color__background-hr;
+
+                a {
+                    color: $color_background;
+                    font-size: 30px;
+                    text-decoration: none;
+
+
+                }
+
+                .page-header {
+
+                    height: auto;
+                    border-bottom: 1px solid $color__background-hr;
+
+                    h1.page-title {
+                        font-size: 40px;
+                        text-align: left;
+                        padding-left: 10px;
+                        font-family: Novecento Sans Web, sans-serif;
+                        letter-spacing: 2px;
+                        text-transform: uppercase;
+
+                    }
+                }
+
+
+
+
+
+
+
+            }
+
+
+            article.page {
+
+
+                .entry-header {
+
+                    .entry-title {
+
+                        padding: 20px 2px;
+                        font-size: 50px;
+                        font-family: Merriweather-Bold, sans-serif;
+                    }
+
+
+                }
+
+                .entry-summary {
+
+                    p {
+
+                        font-size: 20px;
+
+                    }
+
+                }
+
+
+            }
+
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+
+
+
+
+}

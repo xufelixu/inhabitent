@@ -1416,6 +1416,37 @@ object {
     padding: 10px;
     text-decoration: none; }
 
+.search .site-header {
+  position: relative;
+  padding-bottom: 20px; }
+
+.search .site-content .content-area .site-main {
+  padding: 100px;
+  width: 70%;
+  border-right: 1px solid #ccc; }
+  .search .site-content .content-area .site-main a {
+    color: #248483;
+    font-size: 30px;
+    text-decoration: none; }
+  .search .site-content .content-area .site-main .page-header {
+    height: auto;
+    border-bottom: 1px solid #ccc; }
+    .search .site-content .content-area .site-main .page-header h1.page-title {
+      font-size: 40px;
+      text-align: left;
+      padding-left: 10px;
+      font-family: Novecento Sans Web, sans-serif;
+      letter-spacing: 2px;
+      text-transform: uppercase; }
+
+.search .site-content .content-area article.page .entry-header .entry-title {
+  padding: 20px 2px;
+  font-size: 50px;
+  font-family: Merriweather-Bold, sans-serif; }
+
+.search .site-content .content-area article.page .entry-summary p {
+  font-size: 20px; }
+
 .site-footer {
   background-image: url("../../images/dark-wood@2x.png");
   color: #ffffff;
