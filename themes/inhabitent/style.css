@@ -1172,7 +1172,6 @@ object {
 .home .adventures-section a.brand-btn {
   position: relative;
   font-size: 30px;
-  border: solid green;
   padding: 10px 20px;
   text-transform: uppercase;
   color: white;
@@ -1266,6 +1265,8 @@ object {
 
 .archive .site-main {
   padding-top: 60px; }
+  .archive .site-main .description p {
+    text-align: center; }
 
 .archive .product-link-title {
   width: 250px;
@@ -1313,22 +1314,28 @@ object {
   .archive .dots:after {
     content: '...............'; }
 
-.archive .tax-product_type .description {
-  font-family: Merriweather Web, serif;
-  text-align: center;
-  padding: 20px;
+.tax-product_type .description p {
   font-weight: 400;
-  width: 88%;
-  border-bottom: dotted #e1e1e1;
-  position: relative;
-  left: 110px; }
+  border-bottom: 1px dashed #c8c8c8;
+  font-family: Merriweather, serif;
+  width: 78%;
+  margin-left: 150px;
+  padding-bottom: 50px; }
 
-.archive .tax-product_type .archive-php-page {
+.tax-product_type .archive-php-page {
   display: grid;
   grid-template-columns: 250px 250px 250px 250px;
   grid-template-rows: 300px;
-  margin-bottom: 30px;
+  margin-bottom: 100px;
   padding-top: 50px; }
+
+.tax-product_type div.product-link {
+  position: relative; }
+  .tax-product_type div.product-link h3.product-link-title,
+  .tax-product_type div.product-link div.dots,
+  .tax-product_type div.product-link span.price {
+    position: absolute;
+    top: 270px; }
 
 .error-404 {
   margin-top: 100px;

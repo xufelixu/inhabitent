@@ -621,7 +621,7 @@
         a.brand-btn {
             position: relative;
             font-size: 30px;
-            border: solid green;
+
             padding: 10px 20px;
             text-transform: uppercase;
             color: $color_white;
@@ -752,9 +752,13 @@
     .site-main {
         padding-top: 60px;
 
+        .description p {
+
+            text-align: center;
+        }
+
+
     }
-
-
 
 
     .product-link-title {
@@ -814,34 +818,60 @@
 
 
 
-    .tax-product_type {
 
-        .description {
-            font-family: Merriweather Web, serif;
-            text-align: center;
-            padding: 20px;
-            font-weight: 400;
-            width: 88%;
-            border-bottom: dotted $color_border;
-            position: relative;
-            left: 110px;
+}
+
+
+
+.tax-product_type {
+
+    .description p {
+        font-weight: 400;
+        border-bottom: 1px dashed #c8c8c8;
+        font-family: Merriweather, serif;
+        width: 78%;
+        margin-left: 150px;
+        padding-bottom: 50px;
+
+    }
+
+    .archive-php-page {
+        display: grid;
+        grid-template-columns: 250px 250px 250px 250px;
+        grid-template-rows: 300px;
+        margin-bottom: 100px;
+        padding-top: 50px;
+    }
+
+    div.product-link {
+        position: relative;
+
+        h3.product-link-title,
+        div.dots,
+        span.price {
+
+
+            position: absolute;
+            top: 270px;
 
         }
-
-        .archive-php-page {
-            display: grid;
-            grid-template-columns: 250px 250px 250px 250px;
-            grid-template-rows: 300px;
-            margin-bottom: 30px;
-            padding-top: 50px;
-        }
-
-
-
 
 
     }
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 //404 page
 
