@@ -25,13 +25,26 @@
 			    <div class="site-branding">
 					
 					
+			
+				
+				<?php if (is_front_page() || is_page_template('about.php')): ?>
+				<section class="header-white-logo-tent">
+				<a href = "http://localhost:8888/inhabitent/" rel ="home page"><img src="<?php echo get_template_directory_uri() . '/images/inhabitent-logo-tent-white.svg' ?>"
+                class="logo-tent" alt="inhabitent logo tent"/></a>
+				</section>
+				
+				<?php else: ?>
 				<section class="header-green-logo-tent">
 				 <a href = "http://localhost:8888/inhabitent/" rel ="home page"><img src="<?php echo get_template_directory_uri() . '/images/inhabitent-logo-tent.svg' ?>"
                 class="logo-tent" alt="inhabitent logo tent"/></a>
-                </section>
-				
+				 </section>
+
+			    <?php endif; ?>
+
 				</div><!-- .site-branding with green logo tent -->
 
+			  
+			   
               <div class="search-form-site-navigation">	
 					<nav id="site-navigation" class="main-navigation" role="navigation">
 						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html( 'Primary Menu' ); ?></button>

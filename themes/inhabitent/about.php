@@ -10,14 +10,14 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-		       <!-- <div class="site-branding">
+		       <div class="site-branding">
 	
-				<section class="header-green-logo-tent">
+				<!-- <section class="header-white-logo-tent">
 	            <img src="<?php echo get_template_directory_uri() . '/images/inhabitent-logo-tent-white.svg' ?>"
                 class="logo-tent" alt="inhabitent logo tent"/>
-                </section>
+                </section> -->
 				
-				</div> -->
+				</div>
 
 			<?php while ( have_posts() ) : the_post(); ?>
             

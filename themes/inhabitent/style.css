@@ -1033,6 +1033,15 @@ object {
   font-family: Merriweather, serif;
   padding-bottom: 30px; }
 
+.page-template .search-form .icon-search {
+  color: white; }
+
+.page-template .main-navigation a {
+  color: white; }
+
+.page-template .site-header {
+  border-bottom: none; }
+
 .product-template-default .entry-header {
   position: relative; }
   .product-template-default .entry-header img {
@@ -1080,6 +1089,15 @@ object {
 
 .product-template-default .entry-meta {
   display: none; }
+
+.home .search-form .icon-search {
+  color: white; }
+
+.home .main-navigation a {
+  color: white; }
+
+.home .site-header {
+  border-bottom: none; }
 
 .home .entry-title a {
   text-decoration: none;
@@ -1169,6 +1187,8 @@ object {
       left: 30px;
       bottom: 200px; }
     .home .adventures-section div.stories-section article.adventure:first-child img {
+      -webkit-filter: brightness(50%);
+              filter: brightness(50%);
       height: 650px;
       -o-object-fit: cover;
          object-fit: cover; }
@@ -1394,27 +1414,44 @@ object {
     position: absolute;
     top: 270px; }
 
-.error-404 {
-  margin-top: 100px;
-  margin-left: 75px; }
-  .error-404 h1.page-title {
-    font-size: 48px; }
-  .error-404 .page-content {
-    font-size: 28px; }
-  .error-404 i {
-    display: none; }
-  .error-404 h2 {
-    color: purple;
-    margin-bottom: 30px;
-    margin-top: 30px; }
-  .error-404 ul {
-    list-style: none;
-    margin: 0;
-    padding: 0; }
-  .error-404 a {
-    color: #248483;
-    padding: 10px;
-    text-decoration: none; }
+.error404 .site-header {
+  position: relative; }
+
+.error404 .site-content .content-area .error-404 {
+  width: 70%;
+  border-right: solid #ccc 1px;
+  padding: 50px 100px; }
+  .error404 .site-content .content-area .error-404 .page-header .page-title {
+    font-size: 50px;
+    width: 80%;
+    text-transform: uppercase; }
+  .error404 .site-content .content-area .error-404 .page-content a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #248483; }
+  .error404 .site-content .content-area .error-404 .page-content ul {
+    padding-top: 50px;
+    list-style: none; }
+    .error404 .site-content .content-area .error-404 .page-content ul li {
+      padding: 5px; }
+  .error404 .site-content .content-area .error-404 .page-content p {
+    padding: 20px;
+    font-size: 20px; }
+  .error404 .site-content .content-area .error-404 .page-content .widget .widget-title {
+    padding-left: 40px; }
+  .error404 .site-content .content-area .error-404 .page-content .widget .widgettitle {
+    font-size: 30px;
+    padding-left: 40px; }
+  .error404 .site-content .content-area .error-404 .page-content .widget p {
+    padding-left: 40px;
+    font-size: 20px; }
+  .error404 .site-content .content-area .error-404 .page-content .widget select[name=archive-dropdown] {
+    margin-left: 40px;
+    font-size: 20px; }
+  .error404 .site-content .content-area .error-404 .page-content .search-form {
+    padding-left: 40px; }
+    .error404 .site-content .content-area .error-404 .page-content .search-form .show-search .icon-search i.fa {
+      color: white; }
 
 .search .site-header {
   position: relative;

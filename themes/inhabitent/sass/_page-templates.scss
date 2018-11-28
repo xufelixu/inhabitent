@@ -339,6 +339,7 @@
 //about page
 
 .page-template-default {
+
     .content-area {
         border-right: 1px solid $color_border;
         width: 66%;
@@ -371,6 +372,8 @@
 //about page
 
 .page-template {
+
+
     .entry-title {
         text-transform: uppercase;
         font-size: 68px;
@@ -397,8 +400,44 @@
             font-family: Merriweather, serif;
             padding-bottom: 30px;
         }
+
+
+
+
+
     }
+
+    .search-form .icon-search {
+        color: $color_white;
+
+
+    }
+
+    .main-navigation {
+
+        a {
+            color: $color_white;
+        }
+
+    }
+
+    .site-header {
+        border-bottom: none;
+    }
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
 
 //shop page signle product
 
@@ -475,6 +514,23 @@
 .home {
 
 
+    .search-form .icon-search {
+        color: $color_white;
+
+
+    }
+
+    .main-navigation {
+
+        a {
+            color: $color_white;
+        }
+
+    }
+
+    .site-header {
+        border-bottom: none;
+    }
 
 
     .entry-title a {
@@ -608,6 +664,7 @@
                     }
 
                     img {
+                        filter: brightness(50%);
                         height: 650px;
                         object-fit: cover;
                     }
@@ -958,63 +1015,121 @@
 
 
 
-
-
-
-
-
-
-
-
-
 //404 page
 
-.error-404 {
-    h1.page-title {
-        font-size: 48px;
+
+.error404 {
+
+    .site-header {
+        position: relative;
 
     }
 
-    .page-content {
+    .site-content {
 
-        font-size: 28px;
+        .content-area {
 
-    }
 
-    margin-top: 100px;
+            .error-404 {
 
-    margin-left: 75px;
+                width: 70%;
+                border-right: solid $color__background-hr 1px;
+                padding: 50px 100px;
 
-    i {
-        display: none;
-    }
+                .page-header {
+                    .page-title {
 
-    h2 {
-        color: $color__link-visited;
-        margin-bottom: 30px;
-        margin-top: 30px;
-    }
+                        font-size: 50px;
+                        width: 80%;
+                        text-transform: uppercase;
 
-    ul {
 
-        list-style: none;
+                    }
 
-        margin: 0;
 
-        padding: 0;
 
-    }
+                }
 
-    a {
+                .page-content {
 
-        color: $color_background;
-        padding: 10px;
-        text-decoration: none;
+
+
+                    a {
+                        font-size: 20px;
+                        text-decoration: none;
+                        color: $color_background;
+
+                    }
+
+                    ul {
+                        padding-top: 50px;
+                        list-style: none;
+
+                        li {
+                            padding: 5px;
+                        }
+                    }
+
+
+
+                    p {
+
+                        padding: 20px;
+                        font-size: 20px;
+                    }
+
+                    .widget .widget-title {
+                        padding-left: 40px;
+
+
+                    }
+
+                    .widget .widgettitle {
+
+                        font-size: 30px;
+                        padding-left: 40px;
+                    }
+
+                    .widget p {
+
+                        padding-left: 40px;
+                        font-size: 20px;
+                    }
+
+                    .widget select[name=archive-dropdown] {
+                        margin-left: 40px;
+
+                        font-size: 20px;
+                    }
+
+
+                    .search-form {
+                        padding-left: 40px;
+
+
+                        .show-search {
+
+                            .icon-search {
+
+
+                                i.fa {
+                                    color: white;
+                                }
+
+                            }
+
+                        }
+
+
+                    }
+                }
+
+            }
+        }
 
     }
 
 }
-
 
 
 
