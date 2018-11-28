@@ -937,7 +937,16 @@ object {
   .single .journal-content-area ol.comment-list {
     list-style: none;
     padding-left: 40px; }
+    .single .journal-content-area ol.comment-list ul.children {
+      padding-top: 20px;
+      margin: 20px;
+      border-top: 1px solid #ccc; }
+      .single .journal-content-area ol.comment-list ul.children p {
+        padding-left: 60px; }
+      .single .journal-content-area ol.comment-list ul.children .reply a {
+        padding-left: 60px; }
     .single .journal-content-area ol.comment-list img {
+      margin-right: 20px;
       border-radius: 50%;
       float: left; }
     .single .journal-content-area ol.comment-list a {
@@ -945,14 +954,16 @@ object {
       color: #248483; }
     .single .journal-content-area ol.comment-list .comment-content {
       margin-left: 20px;
-      float: left;
       font-size: 26px;
       padding-bottom: 20px; }
       .single .journal-content-area ol.comment-list .comment-content div.comment-author {
         font-size: 20px;
         font-family: Merriweather-Bold, Novovento Sans Web bold; }
       .single .journal-content-area ol.comment-list .comment-content p {
+        padding-left: 80px;
         padding-top: 10px; }
+      .single .journal-content-area ol.comment-list .comment-content .reply a {
+        padding-left: 70px; }
   .single .journal-content-area .entry-title {
     position: absolute;
     top: 130px;

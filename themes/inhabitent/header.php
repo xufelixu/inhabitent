@@ -29,13 +29,15 @@
 				
 				<?php if (is_front_page() || is_page_template('about.php')): ?>
 				<section class="header-white-logo-tent">
-				<a href = "http://localhost:8888/inhabitent/" rel ="home page"><img src="<?php echo get_template_directory_uri() . '/images/inhabitent-logo-tent-white.svg' ?>"
+				<a href = "<?php echo esc_url( home_url( '/' ) ); ?>
+" ><img src="<?php echo get_template_directory_uri() . '/images/inhabitent-logo-tent-white.svg' ?>"
                 class="logo-tent" alt="inhabitent logo tent"/></a>
 				</section>
 				
 				<?php else: ?>
 				<section class="header-green-logo-tent">
-				 <a href = "http://localhost:8888/inhabitent/" rel ="home page"><img src="<?php echo get_template_directory_uri() . '/images/inhabitent-logo-tent.svg' ?>"
+				 <a href = "<?php echo esc_url( home_url( '/' ) ); ?>
+" ><img src="<?php echo get_template_directory_uri() . '/images/inhabitent-logo-tent.svg' ?>"
                 class="logo-tent" alt="inhabitent logo tent"/></a>
 				 </section>
 

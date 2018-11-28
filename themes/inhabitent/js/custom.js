@@ -1,22 +1,22 @@
 (function ($) {
+    $(function () {
 
+        const $iconSearch = $('.site-header .icon-search');
 
+        $iconSearch.on('click', function (event) {
+            event.preventDefault();
 
+            $iconSearch.animate({
+                width: 'toggle'
+            }).focus();
 
-    $('.site-header .icon-search').on('click', function (event) {
-        event.preventDefault();
-
-        $('.site-header .search-field').animate({
-            width: 'toggle'
-        }).focus();
-
-    });
-
-    $('.site-header .search-field').on('focusout', function () {
-        $(this).animate({
-            width: 'toggle'
         });
 
-    });
+        $iconSearch.on('focusout', function () {
+            $(this).animate({
+                width: 'toggle'
+            });
 
+        });
+    });
 })(jQuery);

@@ -202,10 +202,32 @@
 
 
         ol.comment-list {
+
+
+            ul.children {
+                padding-top: 20px;
+                margin: 20px;
+                border-top: 1px solid $color__background-hr;
+
+                p {
+
+                    padding-left: 60px;
+                }
+
+                .reply a {
+
+                    padding-left: 60px;
+                }
+
+            }
+
+
             list-style: none;
             padding-left: 40px;
 
             img {
+                margin-right: 20px;
+
                 border-radius: 50%;
                 float: left;
             }
@@ -217,7 +239,7 @@
 
             .comment-content {
                 margin-left: 20px;
-                float: left;
+
                 font-size: 26px;
                 padding-bottom: 20px;
 
@@ -227,14 +249,18 @@
                     font-size: 20px;
                     font-family: Merriweather-Bold, Novovento Sans Web bold;
 
-
-
                 }
 
                 p {
+                    padding-left: 80px;
                     padding-top: 10px;
                 }
 
+                .reply a {
+                    padding-left: 70px;
+
+
+                }
 
             }
 
