@@ -7,6 +7,10 @@
 //journal page
 
 .blog {
+    .site-header {
+        position: relative;
+    }
+
     .site-main {
 
         padding-top: 60px;
@@ -339,6 +343,9 @@
 //about page
 
 .page-template-default {
+    .site-header {
+        position: relative;
+    }
 
     .content-area {
         border-right: 1px solid $color_border;
@@ -513,6 +520,9 @@
 
 .home {
 
+    .site-header {
+        position: absolute;
+    }
 
     .search-form .icon-search {
         color: $color_white;
@@ -1106,8 +1116,14 @@
                     .search-form {
                         padding-left: 40px;
 
+                        .search-field {
+                            display: block;
+                        }
 
                         .show-search {
+
+
+
 
                             .icon-search {
 

@@ -3,16 +3,16 @@
 
 
 
-    $('.icon-search').on('click', function (event) {
+    $('.site-header .icon-search').on('click', function (event) {
         event.preventDefault();
 
-        $('.search-field').animate({
+        $('.site-header .search-field').animate({
             width: 'toggle'
         }).focus();
 
     });
 
-    $('.search-field').on('focusout', function () {
+    $('.site-header .search-field').on('focusout', function () {
         $(this).animate({
             width: 'toggle'
         });

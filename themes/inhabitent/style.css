@@ -572,7 +572,7 @@ a {
 
 .site-header {
   width: 100%;
-  position: fixed;
+  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -694,12 +694,21 @@ a {
 
 .widget-area {
   position: absolute;
-  right: 0px;
+  right: 100px;
   top: 100px;
   padding-top: 40px; }
   .widget-area a {
     text-decoration: none;
     color: #248A83; }
+  .widget-area .widget_text {
+    padding-bottom: 60px;
+    font-size: 20px; }
+    .widget-area .widget_text h2.widget-title {
+      font-size: 30px;
+      width: 40%; }
+    .widget-area .widget_text .textwidget .contact-info p {
+      padding: 20px 0px;
+      font-size: 20px; }
 
 /* custom hero image of tha bout page*/
 /*--------------------------------------------------------------
@@ -821,6 +830,9 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.blog .site-header {
+  position: relative; }
+
 .blog .site-main {
   padding-top: 60px;
   padding-bottom: 100px;
@@ -992,6 +1004,9 @@ object {
 .single .nav-next {
   display: none; }
 
+.page-template-default .site-header {
+  position: relative; }
+
 .page-template-default .content-area {
   border-right: 1px solid #e1e1e1;
   width: 66%; }
@@ -1089,6 +1104,9 @@ object {
 
 .product-template-default .entry-meta {
   display: none; }
+
+.home .site-header {
+  position: absolute; }
 
 .home .search-form .icon-search {
   color: white; }
@@ -1450,6 +1468,8 @@ object {
     font-size: 20px; }
   .error404 .site-content .content-area .error-404 .page-content .search-form {
     padding-left: 40px; }
+    .error404 .site-content .content-area .error-404 .page-content .search-form .search-field {
+      display: block; }
     .error404 .site-content .content-area .error-404 .page-content .search-form .show-search .icon-search i.fa {
       color: white; }
 

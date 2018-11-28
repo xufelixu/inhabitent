@@ -146,7 +146,7 @@ a {
 
 .site-header {
 	width: 100%;
-	position: fixed;
+	position: absolute;
 	display: flex;
 	justify-content: space-between;
 	border-bottom: 1px solid $color__border-abbr;
