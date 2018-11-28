@@ -1,9 +1,9 @@
 
 # Inhibatent Prject in WordPress
  #### screen shot of Inhibatent
-<img src="./screenShot/adv.png" alt="adventure"/>
-<img src="./screenShot/Jurnal.png" alt="jurnal"/>
-<img src="./screenShot/shop.png" alt="shop"/>
+<img src="./themes/inhabitent/screenShot/adv.png" alt="adventure"/>
+<img src="./themes/inhabitent/screenShot/Jurnal.png" alt="jurnal"/>
+<img src="./themes/inhabitent/screenShot/shop.png" alt="shop"/>
 
 ## Pre-requirements
 * Git
