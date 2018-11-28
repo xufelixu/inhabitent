@@ -1555,3 +1555,44 @@ object {
   width: 20%; }
   .footer-logo img {
     margin-top: 20px; }
+
+.date .hfeed .site-header {
+  position: relative; }
+
+.date .site-content .site-main {
+  padding: 10px 40px;
+  border-right: 1px solid #ccc;
+  width: 65%; }
+  .date .site-content .site-main .entry-header {
+    text-align: center;
+    position: relative; }
+    .date .site-content .site-main .entry-header .entry-meta {
+      bottom: 7px;
+      right: 107px;
+      color: white;
+      position: absolute;
+      font-size: 16px;
+      width: 45%;
+      background-color: #248483; }
+    .date .site-content .site-main .entry-header .entry-title {
+      position: absolute;
+      top: 40px;
+      left: 110px;
+      width: 45%;
+      font-size: 40px;
+      text-align: left;
+      background-color: #248483; }
+      .date .site-content .site-main .entry-header .entry-title a {
+        color: white;
+        text-decoration: none; }
+  .date .site-content .site-main .entry-content {
+    width: 75%;
+    margin-left: 110px;
+    font-size: 20px; }
+
+.date .site-content h1.page-title {
+  margin-left: 110px;
+  width: 75%;
+  font-size: 40px;
+  border-bottom: 1px solid #ccc;
+  text-align: left; }

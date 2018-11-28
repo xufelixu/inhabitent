@@ -1,0 +1,71 @@
+.date {
+    .hfeed .site-header {
+
+        position: relative;
+    }
+
+    .site-content {
+
+
+        .site-main {
+            padding: 10px 40px;
+            border-right: $border_grey_color;
+            width: 65%;
+
+            .entry-header {
+                text-align: center;
+                position: relative;
+
+                .entry-meta {
+                    bottom: 7px;
+                    right: 107px;
+                    color: white;
+                    position: absolute;
+                    font-size: 16px;
+                    width: 45%;
+
+                    background-color: $color_background;
+                }
+
+                .entry-title {
+                    position: absolute;
+                    top: 40px;
+                    left: 110px;
+
+                    width: 45%;
+                    font-size: 40px;
+                    text-align: left;
+                    background-color: $color_background;
+
+                    a {
+
+                        color: white;
+                        text-decoration: none;
+                    }
+                }
+            }
+
+            .entry-content {
+                width: 75%;
+                margin-left: 110px;
+                font-size: 20px;
+            }
+        }
+
+        h1.page-title {
+            margin-left: 110px;
+            width: 75%;
+            font-size: 40px;
+            border-bottom: $border_grey_color;
+            text-align: left;
+        }
+
+
+
+    }
+
+
+
+
+
+}
